@@ -58,7 +58,7 @@ function kultur_theme_menu_tree__main_menu($vars) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>                  
-          <span class="fa-stack fa-lg" style="margin-top: 8px; margin-left:1em;">
+          <span class="fa-stack fa-lg" style="margin-top: 8px; margin-left:0.8em;">
           <a href="/">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-home fa-stack-1x fa-inverse"></i>
