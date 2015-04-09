@@ -41,38 +41,39 @@ function kultur_theme_preprocess_html(&$vars) {
 }
 
 /**
- * Implements theme_menu_tree().
- *
- * Addes wrapper clases for the default menu.
- */
+* Implements theme_menu_tree().
+*
+* Addes wrapper clases for the default menu.
+*/
 function kultur_theme_menu_tree__main_menu($vars) {
 
-  return '
-    <nav class="navbar navbar-default">
-      <div>
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>                  
-          <span class="fa-stack fa-lg" style="margin-top: 8px; margin-left:0.8em;">
-          <a href="/">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-          </a>
-          </span>
-          </div>
+return '
+<nav class="navbar navbar-default">
+<div>
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>                  
+<span class="fa-stack fa-lg" style="margin-top: 8px; margin-left:0.8em;">
+<a href="/">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+</a>
+</span>
+</div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">          
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">          
 <ul class="nav navbar-nav">' . $vars['tree'] . ''
-      . '</ul><form role="search" class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Search" class="form-control">
-            </div>
-            <button class="btn btn-default" type="submit">Submit</button>
-          </form>';
+. '</ul>
+<form accept-charset="UTF-8" id="search-block-form" method="post" action="/" class="navbar-form navbar-right"><div><div>
+<h2 class="element-invisible">Søg form</h2>
+<div class="input-group">
+<input type="text" maxlength="128" size="15" value="" name="search_block_form" id="edit-search-block-form--2" class="form-control" placeholder="Søg" title="Enter the terms you wish to search for."><span class="input-group-btn"><button class="btn btn-default" type="submit">Søg</button></span></div><button type="submit" value="Søg" name="op" id="edit-submit" class="element-invisible btn btn-primary form-submit">Søg</button>
+</div>
+</div></form>';
 }
