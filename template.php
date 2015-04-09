@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Helper function; Load node by title
  */
@@ -17,6 +18,9 @@ function node_load_by_title($title, $node_type) {
 }
 
 function kultur_theme_preprocess_html(&$vars) {
+  drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(
+      'type' => 'external'
+  ));
   $path = drupal_get_path_alias();
   $front = "front";
   if (drupal_match_path($path, $front)) {
@@ -34,4 +38,41 @@ function kultur_theme_preprocess_html(&$vars) {
         '@media screen and (min-width: 1200px) { body { background-size: 100% 100%; background-repeat: no-repeat; background-image:url(' . $bg1600 . ');} }', 'inline'
     );
   }
+}
+
+/**
+ * Implements theme_menu_tree().
+ *
+ * Addes wrapper clases for the default menu.
+ */
+function kultur_theme_menu_tree__main_menu($vars) {
+
+  return '
+    <nav class="navbar navbar-default">
+      <div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>                  
+          <span class="fa-stack fa-lg" style="margin-top: 8px; margin-left:1em;">
+          <a href="/">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+          </a>
+          </span>
+          </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">          
+<ul class="nav navbar-nav">' . $vars['tree'] . ''
+      . '</ul><form role="search" class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Search" class="form-control">
+            </div>
+            <button class="btn btn-default" type="submit">Submit</button>
+          </form>';
 }

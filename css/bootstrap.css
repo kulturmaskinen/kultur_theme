@@ -3676,8 +3676,8 @@ tbody.collapse.in {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 /* line 22, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/glyphicons.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/glyphicons\.less}line{font-family:\0000322}}
@@ -6368,19 +6368,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 395, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003395}}
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #002e5e;
+  border-color: #001e3d;
 }
 /* line 399, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003399}}
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #ffffff;
 }
 /* line 401, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003401}}
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #e6e6e6;
   background-color: transparent;
 }
 /* line 408, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
@@ -6391,22 +6391,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 413, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003413}}
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #ffffff;
 }
 /* line 416, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003416}}
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
-  background-color: transparent;
+  color: #ffffff;
+  background-color: #01b2bb;
 }
 /* line 423, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003423}}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
-  background-color: #e7e7e7;
+  color: #ffffff;
+  background-color: #01b2bb;
 }
 /* line 431, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003431}}
@@ -6436,36 +6436,36 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003451}}
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #001e3d;
 }
 /* line 460, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003460}}
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
-  color: #555555;
+  background-color: #01b2bb;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   /* line 471, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003471}}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #ffffff;
   }
   /* line 473, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003473}}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
-    background-color: transparent;
+    color: #ffffff;
+    background-color: #01b2bb;
   }
   /* line 480, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003480}}
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
-    background-color: #e7e7e7;
+    color: #ffffff;
+    background-color: #01b2bb;
   }
   /* line 488, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003488}}
@@ -6479,23 +6479,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 504, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003504}}
 .navbar-default .navbar-link {
-  color: #777777;
+  color: #ffffff;
 }
 /* line 506, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003506}}
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #ffffff;
 }
 /* line 511, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003511}}
 .navbar-default .btn-link {
-  color: #777777;
+  color: #ffffff;
 }
 /* line 513, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003513}}
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #333333;
+  color: #ffffff;
 }
 /* line 519, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003519}}

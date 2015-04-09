@@ -29,13 +29,30 @@ html {
     }
   }
 }
+.fa-home {
+    color: @gray-base;
+    font-size: 1.4em;
+ }
+ .fa-circle{
+     color: #fff;
+ }
 body {
+    .navbar-default .navbar-nav > li > a {
+     font-size: @font-size-large;
+     color: @navbar-default-link-color;        
+    }
+    .navbar-default {
+        border-color: transparent;
+    }
   // Fix horizontal scrolling on iOS devices.
   // http://drupal.org/node/1870076
   position: relative;
   &.admin-expanded.admin-vertical.admin-nw .navbar,
   &.admin-expanded.admin-vertical.admin-sw .navbar {
     margin-left: 260px;
+  }
+  .navbar {
+      margin-bottom: 0;
   }
   // Add padding to body if various toolbar or navbars are fixed on top.
   &.navbar-is-fixed-top {
@@ -132,9 +149,12 @@ body {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
 }
-
+.panels-flexible-row-site_template-2-inside{
+    position: fixed;
+    bottom:0;
+    width:100%; 
+}
 // Element invisible fix
 .element-invisible {
   margin: 0;
@@ -649,4 +669,19 @@ table {
 }
 .alert-danger a {
   color: darken(@alert-danger-text, 10%);
+}
+.menu-block-wrapper {
+ background-color: @navbar-default-bg; 
+}
+.container-fluid {
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+}
+.panels-flexible-region-site_template-top, .panels-flexible-region-site_template-bottom  {
+    width: 100%;
+}
+.panels-flexible-region-site_template-center{
+  width: 100%;
+  padding-right: 1.4em!important;
+  padding-left: 1.4em!important;
 }
