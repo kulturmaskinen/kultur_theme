@@ -38,8 +38,21 @@ html {
  }
 body {
     .navbar-default .navbar-nav > li > a {
-     font-size: @font-size-large;
-     color: @navbar-default-link-color;        
+     color: @navbar-default-link-color;
+     font-family: Verdana,Geneva,sans-serif;
+     font-size: 14pt;
+     font-weight: bold;
+     text-transform: uppercase;   
+    }
+    @media (min-width: @screen-sm-min) { 
+        .navbar-default .navbar-nav > li > a::after {
+            font-family: FontAwesome;
+            content: "\f142 ";
+            font-size: 1em;
+            font-weight: normal;
+            margin-left: 0.8em;
+            margin-right: 0.4em;
+        }
     }
     .navbar-default {
         border-color: transparent;
@@ -415,8 +428,16 @@ div.password-suggestions ul {
   .input-group-addon {
     background-color: rgb(255, 255, 255);
   }
-}
+ }
 
+ .navbar-form .form-control.form-text {
+     border-radius: 5em;
+     border-bottom-right-radius: 5em;
+     border-top-right-radius: 5em;
+ }
+ #search-block-form.form-search.content-search button.btn.btn-default {
+     border-radius: 5em;
+ }
 // AJAX "Throbber".
 .ajax-progress {
   .glyphicon {

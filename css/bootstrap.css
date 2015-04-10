@@ -6406,7 +6406,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #01b2bb;
+  background-color: #d6007f;
 }
 /* line 431, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003431}}
@@ -6443,7 +6443,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #01b2bb;
+  background-color: #d6007f;
   color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -6465,7 +6465,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #01b2bb;
+    background-color: #d6007f;
   }
   /* line 488, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navbar.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navbar\.less}line{font-family:\00003488}}
