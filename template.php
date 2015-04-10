@@ -46,6 +46,7 @@ function kultur_theme_preprocess_html(&$vars) {
 * Addes wrapper clases for the default menu.
 */
 function kultur_theme_menu_tree__main_menu($vars) {
+$form = drupal_get_form('search_block_form');
 
 return '
 <nav class="navbar navbar-default">
@@ -68,12 +69,6 @@ return '
 
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">          
-<ul class="nav navbar-nav">' . $vars['tree'] . ''
-. '</ul>
-<form accept-charset="UTF-8" id="search-block-form" method="post" action="/" class="navbar-form navbar-right"><div><div>
-<h2 class="element-invisible">Søg form</h2>
-<div class="input-group">
-<input type="text" maxlength="128" size="15" value="" name="search_block_form" id="edit-search-block-form--2" class="form-control" placeholder="Søg" title="Enter the terms you wish to search for."><span class="input-group-btn"><button class="btn btn-default" type="submit">Søg</button></span></div><button type="submit" value="Søg" name="op" id="edit-submit" class="element-invisible btn btn-primary form-submit">Søg</button>
-</div>
-</div></form>';
+<ul class="nav navbar-nav" style="margin: 0 0 0 1em;">' . $vars['tree'] . ''
+. '</ul><div class="navbar-form navbar-right">' . drupal_render($form) . '</div>';
 }
