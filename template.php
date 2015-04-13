@@ -26,6 +26,9 @@ function kultur_theme_preprocess_html(&$vars) {
   if (drupal_match_path($path, $front)) {
     $node = node_load_by_title('forside baggrund', 'background');
   }
+    if (drupal_match_path($path, '*')) {
+    $node = node_load_by_title('noder', 'background');
+  }
 
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
