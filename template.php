@@ -33,11 +33,11 @@ function kultur_theme_preprocess_html(&$vars) {
 
     drupal_add_css(
         '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
-  background-size: cover; background-image:url(' . $bg1200 . ') no-repeat center center fixed;} }', 'inline'
+  background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
     );
     drupal_add_css(
         '@media screen and (min-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
-  background-size: cover; background-image:url(' . $bg1600 . ')no-repeat center center fixed;} }', 'inline'
+  background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1600 . ');} }', 'inline'
     );
   }
 }
