@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default theme implementation to display a node.
@@ -85,71 +84,69 @@
 
 
 <div class="row">
-    <div class="row-same-height">
-  <div class="col-xs-12 col-sm-6 col-md-8 col-xs-height col-full-height">
-   
-  <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <?php print $user_picture; ?>
+    <div class="row-same-height row-full-height">
+        <div class="col-xs-12 col-sm-6 col-md-8 col-xs-height col-full-height scrollbox">
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
- 
-   <div class="lead">
-          <span class="btn btn-default">
-              <?php print render($content['field_category']); ?>
-          </span>
-        <p>
-      <?php print render($content['field_lead'][0]); ?>
-    </p>
-  </div>
-    
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['field_category']);
-      hide($content['field_lead']);
-      hide($content['comments']);
-      hide($content['links']);
-      hide($content['field_title_image']);
-      print render($content);     
-    ?>
-  </div>
-    
-<?php  if (!$teaser) : ?>
-<?php if ($display_submitted): ?>
-  <div>
-    <?php print $user_picture; ?>
-    <div>
-      <h4>
-        <?php print $kultur_theme_byline; ?>
-        <?php print $name; ?>
-      </h4>
-      <p>
-        <i class="icon-time"></i>
-        <?php print $submitted; ?> • <?php print $kultur_theme_updated; ?>
-      </p>
+            <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+                
+              <?php print $user_picture; ?>
+
+                <h2><?php print $title ?></h2>
+
+                <?php if (!$page): ?>
+                  <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+                <?php endif; ?>
+
+                <div class="lead">
+                    <span class="btn btn-default">
+                        <?php print render($content['field_category']); ?>
+                    </span>
+                    <br><br>
+                    <p>
+                        <?php print render($content['field_lead'][0]); ?>
+                    </p>
+                </div>
+
+                <div class="content"<?php print $content_attributes; ?>>
+                    <?php
+                    // We hide the comments and links now so that we can render them later.
+                    hide($content['field_category']);
+                    hide($content['field_lead']);
+                    hide($content['comments']);
+                    hide($content['links']);
+                    hide($content['field_title_image']);
+                    print render($content);
+                    ?>
+                </div>
+
+                <?php if (!$teaser) : ?>
+                  <?php if ($display_submitted): ?>
+                    <div>
+                        <?php print $user_picture; ?>
+                        <div>
+                            <h4>
+                                <?php print $kultur_theme_byline; ?>
+                                <?php print $name; ?>
+                            </h4>
+                            <p>
+                                <i class="icon-time"></i>
+                                <?php print $submitted; ?> • <?php print $kultur_theme_updated; ?>
+                            </p>
+                        </div>
+                    </div>
+                  <?php endif; ?>
+                <?php endif; ?>
+
+                <?php print render($content['links']); ?>
+                <?php print render($content['comments']); ?>
+
+            </div>
+
+        </div>
+        <div class="col-xs-5 col-md-3 col-xs-height col-full-height col-top" style="background-color: #e5e5e5;">
+            <?php print render($content['field_title_image']); ?>
+        </div>
     </div>
-  </div>
-<?php endif; ?>
-<?php endif; ?>
-    
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
-</div>
-  
-  
-  
-  
-  </div>
-  <div class="col-xs-4 col-md-2 col-xs-height" style="background-color: #e5e5e5;">
-    <?php print render($content['field_title_image']); ?>
-  </div>
-  </div>
 </div>
 
 

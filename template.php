@@ -22,12 +22,9 @@ function kultur_theme_preprocess_html(&$vars) {
       'type' => 'external'
   ));
   $path = drupal_get_path_alias();
-  $front = "front";
+  $front = "*";
   if (drupal_match_path($path, $front)) {
     $node = node_load_by_title('forside baggrund', 'background');
-  }
-    if (drupal_match_path($path, '*')) {
-    $node = node_load_by_title('noder', 'background');
   }
 
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
@@ -35,10 +32,12 @@ function kultur_theme_preprocess_html(&$vars) {
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
 
     drupal_add_css(
-        '@media screen and (max-width: 1200px) { body { background-size: 100% 100%; background-repeat: no-repeat; background-image:url(' . $bg1200 . ');} }', 'inline'
+        '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+  background-size: cover; background-image:url(' . $bg1200 . ') no-repeat center center fixed;} }', 'inline'
     );
     drupal_add_css(
-        '@media screen and (min-width: 1200px) { body { background-size: 100% 100%; background-repeat: no-repeat; background-image:url(' . $bg1600 . ');} }', 'inline'
+        '@media screen and (min-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+  background-size: cover; background-image:url(' . $bg1600 . ')no-repeat center center fixed;} }', 'inline'
     );
   }
 }
