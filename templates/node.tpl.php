@@ -80,12 +80,10 @@
  */
 ?>
 
-
-
-
+ <div class="container-fluid">
   <div class="row">
-      <div class="row-same-height row-full-height">
-        <div class="col-xs-12 col-sm-6 col-md-8 col-xs-height col-full-height scrollbox">
+
+        <div class="col-xs-12 col-sm-6 col-md-8 col-xs-height col-full-height">
 
               <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -143,10 +141,10 @@
               </div>
 
           </div>
+          <div class="clearfix visible-xs-block"></div>
         <div class="col-xs-5 col-md-3 col-xs-height col-full-height col-top" style="background-color: #e5e5e5;">
               <?php print render($content['field_title_image']); ?>
           </div>
       </div>
-  </div>
-
+ </div>
 
