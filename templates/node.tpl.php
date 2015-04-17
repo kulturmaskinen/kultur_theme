@@ -81,7 +81,7 @@
 ?>
 
  <div class="container-fluid">
-  <div class="row">
+  <div class="row well">
 
         <div class="col-xs-12 col-sm-6 col-md-8 col-xs-height col-full-height">
 
@@ -96,7 +96,7 @@
                   <?php endif; ?>
 
                   <div class="lead">
-                      <span class="btn btn-default">
+                      <span class="btn btn-info">
                           <?php print render($content['field_category']); ?>
                       </span>
                       <br><br>
@@ -127,7 +127,7 @@
                                   <?php print $name; ?>
                               </h4>
                               <p>
-                                  <i class="icon-time"></i>
+                                  <i class="glyphicon glyphicon-time"></i>
                                   <?php print $submitted; ?> • <?php print $kultur_theme_updated; ?>
                               </p>
                           </div>
@@ -142,7 +142,7 @@
 
           </div>
           <div class="clearfix visible-xs-block"></div>
-        <div class="col-xs-5 col-md-3 col-xs-height col-full-height col-top" style="background-color: #e5e5e5;">
+        <div class="col-md-3 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top" style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
               <?php print render($content['field_title_image']); ?>
           </div>
       </div>

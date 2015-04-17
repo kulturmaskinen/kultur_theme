@@ -64,10 +64,12 @@
   </div>
   <?php print $page_top; ?>
   <?php print $page; ?>
+    <span>
   <?php
   global $base_path;
   print "<img src='" . $base_path . path_to_theme() . "/images/prikker.png' width='362' height='260' style='position:fixed;bottom:7em;right:0;' class='hidden-sm hidden-xs' />";
   ?>
+    </span>
   <?php print $page_bottom; ?>
 </body>
 </html>
