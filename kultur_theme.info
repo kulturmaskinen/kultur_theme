@@ -49,7 +49,7 @@ scripts[] = 'js/base.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
  settings[bootstrap_cdn] = ''
-
+stylesheets[all][] = css/galleria.classic.css
 
 ; ;-------------------------
 ; ; METHOD 2: Bootstrap CDN

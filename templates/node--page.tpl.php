@@ -80,71 +80,66 @@
  */
 ?>
 
- <div class="container-fluid">
-  <div class="row well">
+<div class="container-fluid">
+    <div class="row well">
 
         <div class="col-xs-12 col-sm-6 col-md-8 col-xs-height col-full-height">
 
-              <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+            <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
                 <?php print $user_picture; ?>
 
-                  <h2><?php print $title ?></h2>
+                <h2><?php print $title ?></h2>
+                <?php print render($content['field_title_image']); ?>
+                <?php if (!$page): ?>
+                  <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+                <?php endif; ?>
 
-                  <?php if (!$page): ?>
-                    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-                  <?php endif; ?>
+                <div class="lead">
+                    <p>
+                        <?php print render($content['field_lead'][0]); ?>
+                    </p>
+                </div>
 
-                  <div class="lead">
-                      <span class="btn btn-info">
-                          <?php print render($content['field_category']); ?>
-                      </span>
-                      <br><br>
-                      <p>
-                          <?php print render($content['field_lead'][0]); ?>
-                      </p>
-                  </div>
-
-                  <div class="content"<?php print $content_attributes; ?>>
-                      <?php
-                      // We hide the comments and links now so that we can render them later.
-                      hide($content['field_category']);
-                      hide($content['field_lead']);
-                      hide($content['comments']);
-                      hide($content['links']);
-                      hide($content['field_title_image']);
-                      print render($content);
-                      ?>
-                  </div>
-
-                  <?php if (!$teaser) : ?>
-                    <?php if ($display_submitted): ?>
-                      <div>
-                          <?php print $user_picture; ?>
-                          <div>
-                              <h4>
-                                  <?php print $kultur_theme_byline; ?>
-                                  <?php print $name; ?>
-                              </h4>
-                              <p>
-                                  <i class="glyphicon glyphicon-time"></i>
-                                  <?php print $submitted; ?> • <?php print $kultur_theme_updated; ?>
-                              </p>
-                          </div>
-                      </div>
+                <div class="content"<?php print $content_attributes; ?>>
+                    <?php
+// We hide the comments and links now so that we can render them later.
+                    hide($content['field_category']);
+                    hide($content['field_lead']);
+                    hide($content['comments']);
+                    hide($content['links']);
+                    hide($content['field_title_image']);
+                    hide($content['field_attachments']);
+                    hide($content['field_tags']);
+                    hide($content['field_info']);
+                    hide($content['field_galleria']);
+                    print render($content);
+                    ?>
+                </div>
+                 <p><?php print render($content['field_galleria']); ?></p>
+                    <?php if (!$teaser) : ?>
+                 <p><?php print render($content['field_attachments']); ?></p>
+                      <?php print render($content['field_tags']); ?>
+                      <?php if ($display_submitted): ?>
+                        <div>
+                            <?php print $user_picture; ?>
+                            <div>
+                                <h4>
+                                    <?php print $kultur_theme_byline; ?>
+                                    <?php print $name; ?>
+                                </h4>
+                                <p>
+                                    <i class="glyphicon glyphicon-time"></i>
+                                    <?php print $submitted; ?> • <?php print $kultur_theme_updated; ?>
+                                </p>
+                            </div>
+                        </div>
+                      <?php endif; ?>
                     <?php endif; ?>
-                  <?php endif; ?>
-
-                  <?php print render($content['links']); ?>
-                  <?php print render($content['comments']); ?>
-
-              </div>
-
-          </div>
-          <div class="clearfix visible-xs-block"></div>
-        <div class="col-md-3 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top" style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
-              <?php print render($content['field_title_image']); ?>
-          </div>
-      </div>
- </div>
+                    <?php print render($content['links']); ?>
+                    <?php print render($content['comments']); ?>
+                </div>          
+        </div>           
+    </div>
+</div>
 

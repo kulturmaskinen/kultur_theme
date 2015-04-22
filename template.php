@@ -89,7 +89,7 @@ function kultur_theme_preprocess_node(&$variables, $hook) {
   //added open graph meta tags for facebook.
   $site_name = variable_get('site_name');
   $og_title = $variables['node']->title . ($site_name ? ' | ' . $site_name : '');
-  if ($variables['type'] == 'news') {
+  if ($variables['type'] == 'news' || $variables['type'] == 'page') {
     $og_description = isset($variables['node']->field_lead[LANGUAGE_NONE][0]) ? drupal_substr(check_plain(strip_tags($variables['node']->field_lead[LANGUAGE_NONE][0]['safe_value'])), 0, 100) . '..' : '';
     $og_image = isset($variables['node']->field_title_image[LANGUAGE_NONE][0]) ? file_create_url($variables['node']->field_title_image[LANGUAGE_NONE][0]['uri'], array('absolute' => TRUE)) : '';
   
