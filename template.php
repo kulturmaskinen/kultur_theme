@@ -132,3 +132,22 @@ function kultur_theme_preprocess_node(&$variables, $hook) {
   }
   
 }
+/**
+ * Implements hook_preprocess_panels_pane().
+ *
+ */
+function kultur_theme_preprocess_panels_pane(&$vars) {
+  // Suggestions base on sub-type.
+  $vars['theme_hook_suggestions'][] = 'panels_pane__' . str_replace('-', '__', $vars['pane']->subtype);
+
+  // Suggestions on panel pane
+  $vars['theme_hook_suggestions'][] = 'panels_pane__' . $vars['pane']->panel;
+}
+
+/**
+ * Declare various hook_*_alter() hooks.
+ *
+ * hook_*_alter() implementations must live (via include) inside this file so
+ * they are properly detected when drupal_alter() is invoked.
+ */
+bootstrap_include('kultur_theme', 'theme/alter.inc');
