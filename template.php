@@ -86,6 +86,25 @@ return '
  *   The name of the template being rendered ("node" in this case.)
  */
 function kultur_theme_preprocess_node(&$variables, $hook) {
+  
+    // Add latto_event_location and latto_place2book_tickets to variables (only for ding_event node template)
+  if (isset($variables['content']['field_place2book_tickets']['#bundle']) && $variables['content']['field_place2book_tickets']['#bundle'] == 'events') {
+    $event_location = 'location';
+    if (!empty($variables['content']['field_location'][0]['#address']['name_line'])) {
+      $event_location = $variables['content']['field_location'][0]['#address']['name_line'] . ', ' . $variables['content']['field_location'][0]['#address']['thoroughfare'] . '<br> ' . $variables['content']['field_location'][0]['#address']['postal_code'] . ' ' . $variables['content']['field_location'][0]['#address']['locality'];
+    }
+    else {
+      /**
+       *  @TODO: the full address wil have to be retrieved from the database
+       */
+      $event_location = render($variables['content']['field_rum_og_sted'][0]);
+    }
+    $variables['kultur_theme_event_location'] = $event_location;
+
+    // Set a flag for existence of field_place2book_tickets
+    $variables['kultur_theme_place2book_tickets'] = (isset($variables['content']['field_place2book_tickets'])) ? 1: 0;
+  }
+  
   //added open graph meta tags for facebook.
   $site_name = variable_get('site_name');
   $og_title = $variables['node']->title . ($site_name ? ' | ' . $site_name : '');
@@ -142,6 +161,46 @@ function kultur_theme_preprocess_panels_pane(&$vars) {
 
   // Suggestions on panel pane
   $vars['theme_hook_suggestions'][] = 'panels_pane__' . $vars['pane']->panel;
+}
+
+/**
+ * Implementing the ticketsinfo theme function (support for ding_place2book module)
+ *
+ * @TODO: Markup should not be hardcode into theme function as it makes it very
+ *        hard to override.
+ *
+ */
+function kultur_theme_place2book_ticketsinfo($variables) {
+      $output = '';
+  $place2book_id = $variables['place2book_id'];
+  $url = $variables['url'];
+  $type = $variables['type'];
+
+  switch ($type) {
+    case 'event-over':
+      $output = '<div class="btn-warning btn-large">' . t('The event has already taken place') . '</div>';
+      break;
+    case 'closed-admission':
+      $output = '<div class="btn-warning btn-large">' . t('The event is closed for admission') . '</div>';
+      break;
+    case 'sale-not-started':
+      $output = '<div class="btn-warning btn-large">' . t('Ticket sale has not yet started for this event') . '</div>';
+      break;
+    case 'sale-not-started':
+      $output = '<div class="btn-warning btn-large">' . t('Ticket sale has not yet started for this event') . '</div>';
+      break;
+    case 'no-tickets-left':
+      $output = '<div class="btn-warning btn-large">' . t('Sold out') . '</div>';
+      break;
+    case 'order-link':
+      $output = l(t('Book a ticket'), $url, array('attributes' => array('class' => array('btn', 'btn-primary', 'btn-large') , 'target' => '_blank')));
+      break;
+    default:
+      $output = '';
+      break;
+  }
+
+  return $output;
 }
 
 /**

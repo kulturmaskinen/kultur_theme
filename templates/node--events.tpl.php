@@ -89,22 +89,29 @@
 
                 <?php print $user_picture; ?>
 
-                <h2 style="color:#D70A8C;"><?php print $title ?></h2>
+                <h2 style="color:#00b9be;"><?php print $title ?></h2>
 
                 <?php if (!$page): ?>
                   <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
                 <?php endif; ?>
 
                 <div class="lead">
-                    <br>
+                    <span class="btn btn-info">
+                        <?php print render($content['field_event_category']); ?>
+                    </span>
+                    <br><br>
                     <p>
                         <?php print render($content['field_lead'][0]); ?>
                     </p>
+                     <?php if ($kultur_theme_place2book_tickets): ?>
+                    <p><?php print render($content['field_place2book_tickets'][0]); ?><p>
+                    <?php endif; ?>
                 </div>
 
                 <div class="content"<?php print $content_attributes; ?>>
                     <?php
 // We hide the comments and links now so that we can render them later.
+                    hide($content['field_place2book_tickets']); //<-- field provided by optional module ding_place2book
                     hide($content['field_category']);
                     hide($content['field_lead']);
                     hide($content['comments']);
@@ -114,6 +121,10 @@
                     hide($content['field_tags']);
                     hide($content['field_info']);
                     hide($content['field_galleria']);
+                    hide($content['field_target']);
+                    hide($content['field_price']);
+                    hide($content['field_location']);
+                    hide($content['field_dato']);
                     print render($content);
                     ?>
                 </div>
@@ -147,8 +158,34 @@
 
         <div class="col-md-3 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top" style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
             <?php print render($content['field_title_image']); ?>
+            <br>
             <div class="info-field">
-                <p><?php print render($content['field_attachments']); ?></p>
+                      <p>
+          <i class="glyphicon glyphicon-calendar"></i> <?php print render($content['field_dato'][0]); ?>
+      </p>
+          <p>
+          <i class="glyphicon glyphicon-map-marker"></i> 
+          <?php if ($kultur_theme_event_location): ?>
+            <?php print $kultur_theme_event_location; ?>
+          <?php else: ?>	
+            <?php print t('See event info'); ?>
+          <?php endif; ?>
+        </p>
+      <p>
+          <i class="glyphicon glyphicon-user"></i> <?php print render($content['field_target'][0]); ?>
+      </p>
+      <p>
+          <i class="glyphicon glyphicon-shopping-cart"></i> 
+            <?php if ($content['field_price']['#items'][0]['value'] == -1 || $content['field_price']['#items'][0]['value'] === "0"): ?>
+              <?php print t('Free'); ?>
+            <?php elseif (is_null($content['field_price']['#items'][0]['value'])) : ?>
+	          <?php print t('Free registration'); ?>
+	        <?php else: ?>	          
+            <?php print render($content['field_price'][0]); ?>
+	        <?php endif; ?>
+      </p>
+      
+      <p><?php print render($content['field_attachments']); ?></p>
                 <p><?php print render($content['field_info']); ?></p>
             </div>
         </div>

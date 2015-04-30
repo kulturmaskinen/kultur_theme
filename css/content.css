@@ -14,26 +14,67 @@
 }
 /* line 14, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000314}}
+.arrangementer_front_block {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14pt;
+  display: inline-block;
+  width: 99%;
+  height: 35px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  background-color: #00b9be;
+}
+/* line 26, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000326}}
 .dagens-ret {
   color: #D6E033;
   font-weight: bold;
 }
-/* line 18, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000318}}
+/* line 30, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000330}}
 .view-calendar .views-row {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-/* line 22, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000322}}
+/* line 34, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000334}}
 .views-field-field-list-image {
   display: inline-block;
 }
-/* line 25, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000325}}
+/* line 37, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000337}}
 .subheading {
   display: inline-block;
   max-width: 23em;
-  padding: 0.5em;
+  margin: 0 1.4em 0.5em 0.5em;
   position: absolute;
+}
+/* line 43, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000343}}
+.field-name-field-tags .field-item:after {
+  content: ",";
+}
+/* line 46, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000346}}
+.field-name-field-tags .field-item {
+  display: inline;
+  margin-right: 0.5em;
+}
+/* line 50, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000350}}
+.view-Nyheder .views-field-title .field-content > a {
+  font-weight: bold;
+  font-size: 12pt;
+  color: #D70A8C;
+  text-transform: uppercase;
+}
+/* line 56, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000356}}
+.view-arrangementer .views-field-title .field-content > a {
+  font-weight: bold;
+  font-size: 12pt;
+  color: #00b9be;
+  text-transform: uppercase;
 }

@@ -89,7 +89,7 @@
 
                 <?php print $user_picture; ?>
 
-                <h2 style="color:#D70A8C;"><?php print $title ?></h2>
+                <h2 style="color:#00b9be;"><?php print $title ?></h2>
 
                 <?php if (!$page): ?>
                   <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -100,12 +100,12 @@
                     <p>
                         <?php print render($content['field_lead'][0]); ?>
                     </p>
+
                 </div>
 
                 <div class="content"<?php print $content_attributes; ?>>
                     <?php
 // We hide the comments and links now so that we can render them later.
-                    hide($content['field_category']);
                     hide($content['field_lead']);
                     hide($content['comments']);
                     hide($content['links']);
@@ -114,10 +114,11 @@
                     hide($content['field_tags']);
                     hide($content['field_info']);
                     hide($content['field_galleria']);
+                    hide($content['field_location']);
                     print render($content);
                     ?>
                 </div>
-                  <p><?php print render($content['field_galleria']); ?></p>
+                <p><?php print render($content['field_galleria']); ?></p>
                 <div class="page-footer">
                     <?php if (!$teaser) : ?>
                       <p><?php print render($content['field_tags']); ?></p>
@@ -147,7 +148,10 @@
 
         <div class="col-md-3 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top" style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
             <?php print render($content['field_title_image']); ?>
+            <br>
             <div class="info-field">
+                <i class="glyphicon glyphicon-map-marker"></i> 
+                <?php print render($content['field_location']); ?>
                 <p><?php print render($content['field_attachments']); ?></p>
                 <p><?php print render($content['field_info']); ?></p>
             </div>
