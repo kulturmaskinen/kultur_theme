@@ -28,9 +28,7 @@
  */
 ?>
 
-<?php if ($is_front): ?>
 <div class="arrangementer_front_block"><i class="fa fa-play" style="font-size:16pt;margin-left:0.3em;margin-top:0.3em;"></i> ARRANGEMENTER</div>
-<?php endif; ?>
 
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix);?>

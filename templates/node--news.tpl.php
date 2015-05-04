@@ -79,7 +79,7 @@
  * @ingroup themeable
  */
 ?>
-
+<div class="nyheder_front_block" style="width: 100%;"></div>
 <div class="container-fluid">
     <div class="row well">
 
