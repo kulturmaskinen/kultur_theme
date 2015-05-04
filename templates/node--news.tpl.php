@@ -118,7 +118,7 @@
                     ?>
                 </div>
                   <p><?php print render($content['field_galleria']); ?></p>
-                <div class="page-footer">
+                <div class="page-footer footer">
                     <?php if (!$teaser) : ?>
                       <p><?php print render($content['field_tags']); ?></p>
                       <?php if ($display_submitted): ?>
