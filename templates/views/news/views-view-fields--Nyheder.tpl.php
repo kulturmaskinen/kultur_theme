@@ -31,7 +31,7 @@ foreach ($fields as $id => $field) {
   if($id == 'field_category') {
     print $field->wrapper_prefix;
     print $field->label_html;
-    print '<span class="view-btn btn btn-info">';
+    print '<span class="view-btn btn btn-news">';
     print $field->content;
     print '</span>';
     print $field->wrapper_suffix;    

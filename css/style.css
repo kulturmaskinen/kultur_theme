@@ -10478,6 +10478,13 @@ article {
   margin-right: 1.5em;
   margin-top: 1.5em;
 }
+/* line 826, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003826}}
+.btn-news {
+  background-color: #d80c8c;
+  border-color: #d80c8c;
+  color: #ffffff;
+}
 /* line 2, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\000032}}
 .nyheder_front_block {
