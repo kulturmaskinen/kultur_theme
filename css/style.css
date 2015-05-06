@@ -10426,7 +10426,7 @@ article {
 /* line 787, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003787}}
 .well {
-  padding: 2px;
+  padding: 0.5em;
 }
 /* line 790, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003790}}

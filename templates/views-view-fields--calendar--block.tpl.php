@@ -24,7 +24,7 @@
  * @ingroup views_templates
  */
 ?>
-<h4 class="dagens-ret">DAGENS RET I CAFÉEN</h4>
+<h5 class="dagens-ret">DAGENS RET I CAFÉEN</h5>
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
