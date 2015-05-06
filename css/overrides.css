@@ -1123,4 +1123,10 @@ article {
   color: white;
   margin-bottom: 20px;
   min-height: 20px;
+  padding: 0.5em;
+}
+/* line 841, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003841}}
+.well-yellow .pane-title {
+  font-weight: bold;
 }
