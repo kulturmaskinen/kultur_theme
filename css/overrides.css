@@ -965,7 +965,7 @@ h2 {
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   
     text-overflow: ellipsis;
-    width: 120px;
+    width: 60%;
   }
   /* line 726, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003726}}
@@ -989,7 +989,7 @@ h2 {
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   
     text-overflow: ellipsis;
-    width: 120px;
+    width: 60%;
   }
   /* line 738, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003738}}
