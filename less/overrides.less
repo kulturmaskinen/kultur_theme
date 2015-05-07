@@ -710,6 +710,23 @@ h1, h2 {
 }
 
 @media (max-width: 768px) {
+    .view-arrangementer .views-field-title .field-content > a {
+    font-size: 10pt!important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -moz-box;
+}
+.view-Nyheder .views-field-title .field-content > a {
+    font-size: 10pt!important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -moz-box;
+}
+    #logo > img {
+    width: 100%;
+}
     .col-sm-height img {
         height: 100%;
     }
@@ -839,5 +856,14 @@ article {
     padding: 0.5em;
 }
 .well-yellow .pane-title {
-        font-weight: bold;
-    }
+    font-weight: bold;
+}
+.calendar-calendar .month-view .full td.multi-day div.monthview, .calendar-calendar .week-view .full td.multi-day div.weekview, .calendar-calendar .day-view .full td.multi-day div.dayview {
+    background: none repeat scroll 0 0 #01BABD;
+}
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+    background: none repeat scroll 0 0 #01BABD;
+}
+.calendar .field-content > a {
+    color: #000;
+}
