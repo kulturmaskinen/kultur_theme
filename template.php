@@ -90,14 +90,15 @@ function kultur_theme_preprocess_node(&$variables, $hook) {
     // Add latto_event_location and latto_place2book_tickets to variables (only for ding_event node template)
   if (isset($variables['content']['field_place2book_tickets']['#bundle']) && $variables['content']['field_place2book_tickets']['#bundle'] == 'events') {
     $event_location = 'location';
-    if (!empty($variables['content']['field_location'][0]['#address']['name_line'])) {
-      $event_location = $variables['content']['field_location'][0]['#address']['name_line'] . ', ' . $variables['content']['field_location'][0]['#address']['thoroughfare'] . '<br> ' . $variables['content']['field_location'][0]['#address']['postal_code'] . ' ' . $variables['content']['field_location'][0]['#address']['locality'];
-    }
+    if (!empty($variables['content']['field_rum_og_sted'][0]['#address']['name_line'])) {
+      $event_location = $variables['content']['field_rum_og_sted'][0]['#address']['name_line'] . ', ' . $variables['content']['field_rum_og_sted'][0]['#address']['thoroughfare'] . '<br> ' . $variables['content']['field_rum_og_sted'][0]['#address']['postal_code'] . ' ' . $variables['content']['field_rum_og_sted'][0]['#address']['locality'];
+      hide($variables['content']['field_location']);
+ }
     else {
       /**
        *  @TODO: the full address wil have to be retrieved from the database
        */
-      $event_location = $variables['content']['field_rum_og_sted'][0]['#address']['name_line'] . ', ' . $variables['content']['field_rum_og_sted'][0]['#address']['thoroughfare'] . '<br> ' . $variables['content']['field_rum_og_sted'][0]['#address']['postal_code'] . ' ' . $variables['content']['field_rum_og_sted'][0]['#address']['locality'];
+      $event_location = $variables['content']['field_location'][0]['#address']['name_line'] . ', ' . $variables['content']['field_location'][0]['#address']['thoroughfare'] . '<br> ' . $variables['content']['field_location'][0]['#address']['postal_code'] . ' ' . $variables['content']['field_location'][0]['#address']['locality'];  
     }
     $variables['kultur_theme_event_location'] = $event_location;
 

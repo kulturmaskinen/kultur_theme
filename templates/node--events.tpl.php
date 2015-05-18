@@ -124,6 +124,7 @@
                     hide($content['field_target']);
                     hide($content['field_price']);
                     hide($content['field_location']);
+                    hide($content['field_rum_og_sted']);
                     hide($content['field_dato']);
                     print render($content);
                     ?>
