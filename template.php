@@ -97,7 +97,7 @@ function kultur_theme_preprocess_node(&$variables, $hook) {
       /**
        *  @TODO: the full address wil have to be retrieved from the database
        */
-      $event_location = render($variables['content']['field_rum_og_sted'][0]);
+      $event_location = $variables['content']['field_rum_og_sted'][0]['#address']['name_line'] . ', ' . $variables['content']['field_rum_og_sted'][0]['#address']['thoroughfare'] . '<br> ' . $variables['content']['field_rum_og_sted'][0]['#address']['postal_code'] . ' ' . $variables['content']['field_rum_og_sted'][0]['#address']['locality'];
     }
     $variables['kultur_theme_event_location'] = $event_location;
 
