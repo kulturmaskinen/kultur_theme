@@ -48,10 +48,11 @@ function kultur_theme_preprocess_html(&$vars) {
 * Addes wrapper clases for the default menu.
 */
 function kultur_theme_menu_tree__main_menu($vars) {
-$form = drupal_get_form('search_block_form');
-global $cur_level;
-$cur_level++;
-return '
+  $form = drupal_get_form('search_block_form');
+  global $cur_level;
+  $cur_level++;
+  if ($cur_level == '1') {
+    return '
 <nav class="navbar navbar-default">
 <div>
 <!-- Brand and toggle get grouped for better mobile display -->
@@ -72,8 +73,9 @@ return '
 
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">          
-<ul class="nav navbar-nav level-' . $cur_level . ' " style="margin: 0 0 0 1em;">' . $vars['tree'] . ''
-. '</ul><div class="navbar-form navbar-right">' . drupal_render($form) . '</div>';
+<ul class="nav navbar-nav" style="margin: 0 0 0 1em;">' . $vars['tree'] . ''
+        . '</ul><div class="navbar-form navbar-right">' . drupal_render($form) . '</div>';
+  }
 }
 
 /**
