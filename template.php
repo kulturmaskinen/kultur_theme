@@ -49,7 +49,8 @@ function kultur_theme_preprocess_html(&$vars) {
 */
 function kultur_theme_menu_tree__main_menu($vars) {
 $form = drupal_get_form('search_block_form');
-
+global $cur_level;
+$cur_level++;
 return '
 <nav class="navbar navbar-default">
 <div>
@@ -71,7 +72,7 @@ return '
 
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">          
-<ul class="nav navbar-nav" style="margin: 0 0 0 1em;">' . $vars['tree'] . ''
+<ul class="nav navbar-nav level-' . $cur_level . ' " style="margin: 0 0 0 1em;">' . $vars['tree'] . ''
 . '</ul><div class="navbar-form navbar-right">' . drupal_render($form) . '</div>';
 }
 
