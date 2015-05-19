@@ -10580,7 +10580,7 @@ article {
 }
 /* line 884, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003884}}
-.menu.nav > li > a {
+.menu.nav li > a {
   color: #fff;
 }
 /* line 2, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
