@@ -39,7 +39,7 @@ body {
 body .navbar-default .navbar-nav > li > a {
   color: #ffffff;
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 14pt;
+  font-size: 13pt;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -49,7 +49,7 @@ body .navbar-default .navbar-nav > li > a {
   body .navbar-default .navbar-nav > li > a::after {
     font-family: FontAwesome;
     content: "\f142 ";
-    font-size: 1em;
+    font-size: 11pt;
     font-weight: normal;
     margin-left: 0.8em;
     margin-right: 0.4em;
@@ -1212,7 +1212,7 @@ article {
 /* line 885, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003885}}
 .navbar-default .navbar-nav > .dropdown > a .caret {
-  margin-left: 0.5em;
+  margin-left: 0.3em;
   border-bottom-color: #fff;
   border-top-color: #fff;
 }
