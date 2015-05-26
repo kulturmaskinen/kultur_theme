@@ -1209,3 +1209,10 @@ article {
 .menu.nav li > a {
   color: #fff;
 }
+/* line 885, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003885}}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  margin-left: 0.5em;
+  border-bottom-color: #fff;
+  border-top-color: #fff;
+}
