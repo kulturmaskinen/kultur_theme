@@ -111,13 +111,18 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000383}}
 .dropdown-menu > li > a {
   color: black;
-  font-weight: bold;
+  text-transform: uppercase;
   padding: 5px 1em;
 }
 /* line 88, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000388}}
 .open > .dropdown-menu {
   width: 100%;
+}
+/* line 92, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000392}}
+.navbar-nav > li > .dropdown-menu {
+  border-radius: 0;
 }
 /* line 95, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000395}}
