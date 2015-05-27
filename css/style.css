@@ -10578,7 +10578,7 @@ article {
 .view .date-nav-wrapper .date-prev {
   position: unset;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   /* line 892, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003892}}
   .navbar-header {
