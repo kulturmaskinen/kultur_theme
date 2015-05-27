@@ -715,28 +715,20 @@ h1, h2 {
 @media (max-width: 768px) {
     .view-arrangementer .views-field-title .field-content > a {
     font-size: 10pt!important;
+    max-width: 16em;
     overflow: hidden;
     white-space: nowrap;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display:inline-block;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     text-overflow: ellipsis;
-    width: 60%;
 
 }
 .view-Nyheder .views-field-title .field-content > a {
     font-size: 10pt!important;
+    max-width: 16em;
     overflow: hidden;
     white-space: nowrap;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display:inline-block;           /* NEW, Spec - Opera 12.1, Firefox 20+ */
     text-overflow: ellipsis;
-    width: 60%;
 }
     #logo > img {
     width: 100%;
