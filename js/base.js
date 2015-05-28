@@ -1,8 +1,7 @@
 +function ($) {
 
     $(document).ready(function ($) {
-        $('.pane-page-content').css("height", $(document).height() - 270);
-
+      
         checkSize();
 // run test on resize of the window
         $(window).resize(checkSize);
@@ -10,7 +9,9 @@
     });
 
     function checkSize() {
-
+        
+        $('.pane-page-content').css("height", $(document).height() - 270);
+        
         if ($(window).width() < 768) {
 
             $('.panels-flexible-region-node_view-center').prependTo($('.panels-flexible-region-node_view-left').parent());
