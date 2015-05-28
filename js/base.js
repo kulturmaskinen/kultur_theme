@@ -1,7 +1,7 @@
 +function ($) {
 
     $(document).ready(function ($) {
-        $('.pane-page-content').css("height", $(document).height() - 270);
+        $('.pane-page-content').css("height", $(document).height() - 260);
 
         checkSize();
 // run test on resize of the window
