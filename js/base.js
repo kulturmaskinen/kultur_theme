@@ -1,7 +1,7 @@
 +function ($) {
 
     $(document).ready(function ($) {
-        $('.panels-flexible-region-container-fluid-center-inside').css("height", $(document).height() - 270);
+        $('.pane-page-content').css("height", $(document).height() - 270);
 
         checkSize();
 // run test on resize of the window
