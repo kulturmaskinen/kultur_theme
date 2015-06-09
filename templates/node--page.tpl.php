@@ -90,12 +90,13 @@
                 <?php print $user_picture; ?>
 
                 <h2><?php print $title ?></h2>
-                <?php print render($content['field_title_image']); ?>
+
                 <?php if (!$page): ?>
                   <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
                 <?php endif; ?>
 
                 <div class="lead">
+                    <br>
                     <p>
                         <?php print render($content['field_lead'][0]); ?>
                     </p>
@@ -116,10 +117,10 @@
                     print render($content);
                     ?>
                 </div>
-                 <p><?php print render($content['field_galleria']); ?></p>
+                  <p><?php print render($content['field_galleria']); ?></p>
+                <div class="page-footer footer">
                     <?php if (!$teaser) : ?>
-                 <p><?php print render($content['field_attachments']); ?></p>
-                      <?php print render($content['field_tags']); ?>
+                      <p><?php print render($content['field_tags']); ?></p>
                       <?php if ($display_submitted): ?>
                         <div>
                             <?php print $user_picture; ?>
@@ -136,10 +137,20 @@
                         </div>
                       <?php endif; ?>
                     <?php endif; ?>
+
                     <?php print render($content['links']); ?>
                     <?php print render($content['comments']); ?>
-                </div>          
-        </div>           
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top" style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
+            <?php print render($content['field_title_image']); ?>
+            <div class="info-field">
+                <p><?php print render($content['field_attachments']); ?></p>
+                <p><?php print render($content['field_info']); ?></p>
+            </div>
+        </div>
     </div>
 </div>
-
