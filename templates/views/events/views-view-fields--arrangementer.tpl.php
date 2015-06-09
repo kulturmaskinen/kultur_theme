@@ -48,7 +48,7 @@ foreach ($fields as $id => $field) {
     print $field->wrapper_suffix;
   }
   
-  if($id == 'field_lead') {
+  if($id == 'field_dato') {
     print "</div>";
   }
 }
