@@ -14,12 +14,18 @@
         
         if ($(window).width() < 768) {
 
-            $('.panels-flexible-region-node_view-center').prependTo($('.panels-flexible-region-node_view-left').parent());
+            if ($(window).width() < 768) {
 
-        } else {
+        $('.col-md-3.col-xs-12.col-sm-height.col-md-height.col-xs-height.col-full-height.col-top').prependTo($('.col-xs-12.col-sm-6.col-md-8.col-xs-height.col-full-height').parent());
+                } else {
 
-            $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region-node_view-center').parent());
+        $('.col-xs-12.col-sm-6.col-md-8.col-xs-height.col-full-height').prependTo($('.col-md-3.col-xs-12.col-sm-height.col-md-height.col-xs-height.col-full-height.col-top').parent());
+                }
 
+        $('.panels-flexible-region-node_view-center').prependTo($('.panels-flexible-region-node_view-left').parent());
+                } else {
+
+$('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region-node_view-center').parent());
         }
     }
 
