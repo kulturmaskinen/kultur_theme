@@ -10424,25 +10424,31 @@ article {
 /* line 782, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003782}}
 .views-field.views-field-field-dato {
-  color: #00b9be;
-  text-align: right;
+  color: gray;
+  float: left;
 }
 /* line 786, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003786}}
+.views-field-field-rum-og-sted .field-content > a {
+  color: #00b9be;
+  text-rendering: optimizelegibility;
+}
+/* line 790, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003790}}
 .panel-pane.pane-page-content {
   margin-left: 1.5em;
   margin-right: 1.5em;
   margin-top: 1.5em;
 }
-/* line 791, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003791}}
+/* line 795, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003795}}
 .btn-news {
   background-color: #d80c8c;
   border-color: #d80c8c;
   color: #ffffff;
 }
-/* line 796, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003796}}
+/* line 800, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003800}}
 .well-yellow {
   background-color: #d6e033;
   border: 1px solid #d6e033;
@@ -10453,45 +10459,45 @@ article {
   min-height: 20px;
   padding: 0.5em;
 }
-/* line 806, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003806}}
+/* line 810, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003810}}
 .well-yellow .pane-title {
   font-weight: bold;
 }
-/* line 809, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003809}}
+/* line 813, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003813}}
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
   background: none repeat scroll 0 0 #01BABD;
 }
-/* line 812, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003812}}
+/* line 816, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003816}}
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
   background: none repeat scroll 0 0 #01BABD;
 }
-/* line 815, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003815}}
+/* line 819, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003819}}
 .calendar .field-content > a {
   color: #000;
 }
-/* line 818, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003818}}
+/* line 822, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003822}}
 .menu.nav li > a {
   color: #fff;
 }
-/* line 821, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003821}}
+/* line 825, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003825}}
 .navbar-default .navbar-nav > .dropdown > a .caret {
   margin-left: 0.3em;
   border-bottom-color: #fff;
   border-top-color: #fff;
 }
-/* line 826, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003826}}
+/* line 830, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003830}}
 .view .date-nav-wrapper .date-next,
 .view .date-nav-wrapper .date-prev {
   position: unset;
@@ -10508,20 +10514,20 @@ article {
 }
 /* Small Devices, Tablets  */
 @media only screen and (min-width: 768px) {
-  /* line 851, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003851}}
-  .col-sm-height {
-    display: table-cell;
-    float: none !important;
-  }
   /* line 855, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003855}}
-  .col-xs-height {
+  .col-sm-height {
     display: table-cell;
     float: none !important;
   }
   /* line 859, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003859}}
+  .col-xs-height {
+    display: table-cell;
+    float: none !important;
+  }
+  /* line 863, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003863}}
   .navbar-default .navbar-nav > li > a::after {
     font-family: FontAwesome;
     content: "\f142 ";
@@ -10533,8 +10539,8 @@ article {
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  /* line 872, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003872}}
+  /* line 876, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003876}}
   .col-md-height {
     display: table-cell;
     float: none !important;
@@ -10542,8 +10548,8 @@ article {
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  /* line 880, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003880}}
+  /* line 884, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003884}}
   .col-lg-height {
     display: table-cell;
     float: none !important;
@@ -10556,72 +10562,72 @@ article {
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 897, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003897}}
+  /* line 901, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003901}}
   .navbar-header {
     float: none;
   }
-  /* line 900, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003900}}
+  /* line 904, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003904}}
   .navbar-left,
   .navbar-right {
     float: none !important;
   }
-  /* line 903, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003903}}
+  /* line 907, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003907}}
   .navbar-toggle {
     display: block;
   }
-  /* line 906, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003906}}
+  /* line 910, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003910}}
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
-  /* line 910, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003910}}
+  /* line 914, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003914}}
   .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
   }
-  /* line 914, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003914}}
+  /* line 918, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003918}}
   .navbar-collapse.collapse {
     display: none!important;
   }
-  /* line 917, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003917}}
+  /* line 921, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003921}}
   .navbar-nav {
     float: none!important;
     margin-top: 7.5px;
   }
-  /* line 921, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003921}}
+  /* line 925, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003925}}
   .navbar-nav > li {
     float: none;
   }
-  /* line 924, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003924}}
+  /* line 928, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003928}}
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  /* line 928, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003928}}
+  /* line 932, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003932}}
   .collapse.in {
     display: block !important;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* line 935, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003935}}
+  /* line 939, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003939}}
   .panel-pane.pane-page-content {
     margin-left: 0.5em!important;
     margin-right: 0!important;
   }
-  /* line 939, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003939}}
+  /* line 943, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003943}}
   .view-arrangementer .views-field-title .field-content > a {
     font-size: 10pt!important;
     max-width: 15em;
@@ -10632,8 +10638,8 @@ article {
   
     text-overflow: ellipsis;
   }
-  /* line 948, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003948}}
+  /* line 952, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003952}}
   .view-Nyheder .views-field-title .field-content > a {
     font-size: 10pt!important;
     max-width: 15em;
@@ -10644,13 +10650,13 @@ article {
   
     text-overflow: ellipsis;
   }
-  /* line 956, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003956}}
+  /* line 960, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003960}}
   #logo > img {
     width: 100%;
   }
-  /* line 959, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003959}}
+  /* line 963, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003963}}
   .col-sm-height img {
     height: 100%;
   }
@@ -10719,7 +10725,7 @@ article {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000344}}
 .subheading {
   display: inline-block;
-  max-width: 23em;
+  width: 73%;
   margin: 0 1.4em 0.5em 0.5em;
   position: absolute;
 }
@@ -10806,4 +10812,9 @@ article {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003106}}
 .front .panels-flexible-region-4_x_3-far_right-inside {
   margin-top: 4em;
+}
+/* line 109, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003109}}
+.views-field.views-field-field-rum-og-sted {
+  text-align: right;
 }

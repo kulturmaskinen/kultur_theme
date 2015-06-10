@@ -24,7 +24,17 @@
  */
 
 foreach ($fields as $id => $field) {
+
+  if ($id === 'field_rum_og_sted' && $fields['field_rum_og_sted']->content != '<div class="field-content"></div>') {
+  preg_match( '/(.*?)<\/div><\/div>/', $fields['field_rum_og_sted']->content, $matches );
   
+    $field->content = $matches[0]  .'</a></div>';
+  
+  }
+  if ($id === 'field_location_name_line' && $fields['field_rum_og_sted']->content != '<div class="field-content"></div>') {
+    unset($field->content);
+  }
+
   if($id == 'title') {
     print '<div class="subheading">';
   }
@@ -44,11 +54,13 @@ foreach ($fields as $id => $field) {
   if($id != 'field_event_category') {
     print $field->wrapper_prefix;
     print $field->label_html;
+    if (isset($field->content)) {
     print $field->content;
+    }
     print $field->wrapper_suffix;
   }
   
-  if($id == 'field_dato') {
+  if($id == 'field_lead') {
     print "</div>";
   }
 }
