@@ -1296,7 +1296,7 @@ article {
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003972}}
   .views-field-field-dato .date-display-single {
     font-size: 8pt;
-    width: 2%;
+    width: 1%;
   }
 }
 /* Custom, iPhone Retina */@media only screen and (max-width: 320px) {
