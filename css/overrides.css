@@ -1294,11 +1294,16 @@ article {
 /* Extra Small Devices, Phones */@media only screen and (max-width: 480px) {
   /* line 972, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003972}}
-  .views-field.views-field-field-dato {
-    margin-right: 2%;
+  span.btn.btn-info {
+    margin-top: 1em;
   }
   /* line 975, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003975}}
+  .views-field.views-field-field-dato {
+    margin-right: 2%;
+  }
+  /* line 978, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003978}}
   .views-field-field-dato .date-display-single {
     font-size: 8pt;
   }
