@@ -10632,7 +10632,7 @@ article {
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003945}}
   .view-arrangementer .views-field-title .field-content > a {
     font-size: 10pt!important;
-    max-width: 15em;
+    max-width: 14em;
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
