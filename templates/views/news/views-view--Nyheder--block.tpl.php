@@ -28,9 +28,8 @@
  */
 ?>
 
-<div class="nyheder_front_block"><i class="fa fa-play" style="font-size:16pt;margin-left:0.3em;margin-top:0.3em;"></i> NYHEDER</div>
-
 <div class="<?php print $classes; ?>">
+    <div class="nyheder_front_block"><i class="fa fa-play" style="font-size:16pt;margin-left:0.3em;margin-top:0.3em;"></i> NYHEDER</div>
   <?php print render($title_prefix);?>
   <?php if ($title): ?>
     <?php print $title; ?>

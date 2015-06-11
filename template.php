@@ -1,5 +1,57 @@
 <?php
 
+function kultur_theme_views_load_more_pager($vars) {
+  global $pager_page_array, $pager_total;
+
+  $tags = $vars['tags'];
+  $element = $vars['element'];
+  $parameters = $vars['parameters'];
+
+  $pager_classes = array('pager', 'pager-load-more');
+
+  $li_next = theme('pager_next',
+    array(
+      'text' => (isset($tags[3]) ? $tags[3] : t($vars['more_button_text'])),
+      'element' => $element,
+      'interval' => 1,
+      'parameters' => $parameters,
+    )
+  );
+  if (empty($li_next)) {
+    $li_next = empty($vars['more_button_empty_text']) ? '&nbsp;' : t($vars['more_button_empty_text']);
+    $pager_classes[] = 'pager-load-more-empty';
+  }
+  // Compatibility with tao theme's pager
+  elseif (is_array($li_next) && isset($li_next['title'], $li_next['href'], $li_next['attributes'], $li_next['query'])) {
+    $li_next = l($li_next['title'], $li_next['href'], array('attributes' => $li_next['attributes'], 'query' => $li_next['query']));
+  }
+
+  if (isset($_REQUEST['page']) && $_REQUEST['page'] >= 1) {
+    $access_id = $_REQUEST['access_id'];
+    $query_p = array("access_id[0]" => $access_id[0], "page" => 0);
+    $li_p = l("Show Less", "", array('query' => $query_p));
+    $items[] = array(
+        'class' => array('pager-previous'),
+        'data' => $li_p,
+    );
+  }
+
+  if ($pager_total[$element] > 1) {
+    $items[] = array(
+      'class' => array('pager-next'),
+      'data' => $li_next,
+    );
+    return theme('item_list',
+      array(
+        'items' => $items,
+        'title' => NULL,
+        'type' => 'ul',
+        'attributes' => array('class' => $pager_classes),
+      )
+    );
+  }
+}
+
 /**
  * Helper function; Load node by title
  */
