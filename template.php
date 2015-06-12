@@ -75,8 +75,12 @@ function kultur_theme_preprocess_html(&$vars) {
   ));
   $path = drupal_get_path_alias();
   $front = "*";
+  $arrangementer = "arrangementer/*";
   if (drupal_match_path($path, $front)) {
     $node = node_load_by_title('forside baggrund', 'background');
+  }
+  if (drupal_match_path($path, $arrangementer)) {
+    $node = node_load_by_title('arrangementer baggrund', 'background');
   }
 
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
