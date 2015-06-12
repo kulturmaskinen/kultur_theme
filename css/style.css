@@ -10682,16 +10682,21 @@ article {
 /* Extra Small Devices, Phones */@media only screen and (max-width: 480px) {
   /* line 985, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003985}}
-  .lead span.btn.btn-info {
-    margin-top: 1em;
+  .nav {
+    margin-bottom: 1em;
   }
   /* line 988, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003988}}
-  .views-field-field-event-category {
-    margin-right: 2%;
+  .lead span.btn.btn-info {
+    margin-top: 1em;
   }
   /* line 991, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003991}}
+  .views-field-field-event-category {
+    margin-right: 2%;
+  }
+  /* line 994, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003994}}
   .views-field-field-dato .date-display-single {
     font-size: 8pt;
   }
