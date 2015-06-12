@@ -96,7 +96,10 @@
                 <?php endif; ?>
 
                 <div class="lead">
-                    <br>
+                    <span class="btn btn-news">
+                        <?php print render($content['field_category']); ?>
+                    </span>
+                    <br><br>
                     <p>
                         <?php print render($content['field_lead'][0]); ?>
                     </p>
