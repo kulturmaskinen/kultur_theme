@@ -29,7 +29,7 @@ function kultur_theme_views_load_more_pager($vars) {
   if (isset($_REQUEST['page']) && $_REQUEST['page'] >= 1) {
     $access_id = $_REQUEST['access_id'];
     $query_p = array("access_id[0]" => $access_id[0], "page" => 0);
-    $li_p = l("Show Less", "", array('query' => $query_p));
+    $li_p = l("Back", "", array('query' => $query_p));
     $items[] = array(
         'class' => array('pager-previous'),
         'data' => $li_p,
