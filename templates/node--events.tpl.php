@@ -171,10 +171,12 @@
           <?php else: ?>	
             <?php print t('See event info'); ?>
           <?php endif; ?>
-        </p>
-      <p>
-          <i class="glyphicon glyphicon-user"></i> <?php print render($content['field_target'][0]); ?>
-      </p>
+        </p>    
+          <?php if (isset($content['field_target'][0])): ?>
+            <p>
+              <i class="glyphicon glyphicon-user"></i> <?php print render($content['field_target'][0]); ?>
+          </p>
+        <?php endif; ?>    
       <p>
           <i class="glyphicon glyphicon-shopping-cart"></i> 
             <?php if ($content['field_price']['#items'][0]['value'] == -1 || $content['field_price']['#items'][0]['value'] === "0"): ?>
