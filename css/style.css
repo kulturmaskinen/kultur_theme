@@ -10779,19 +10779,21 @@ article {
 }
 /* line 57, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000357}}
-.view-Nyheder .views-field-title .field-content > a {
+.views-field-title .field-content > a {
   font-weight: bold;
   font-size: 11pt;
-  color: #D70A8C;
+  color: #337ab7;
   text-transform: uppercase;
 }
 /* line 63, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000363}}
+.view-Nyheder .views-field-title .field-content > a {
+  color: #D70A8C;
+}
+/* line 66, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000366}}
 .view-arrangementer .views-field-title .field-content > a {
-  font-weight: bold;
-  font-size: 11pt;
   color: #00b9be;
-  text-transform: uppercase;
 }
 /* line 69, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000369}}
