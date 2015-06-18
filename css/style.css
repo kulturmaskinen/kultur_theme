@@ -5052,7 +5052,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: #ffffff;
+  background-color: #01b2bb;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -5102,7 +5102,7 @@ tbody.collapse.in {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #337ab7;
+  background-color: #01b2bb;
 }
 /* line 102, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/dropdowns.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/dropdowns\.less}line{font-family:\00003102}}
@@ -5831,7 +5831,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #337ab7;
+  background-color: #01b2bb;
 }
 /* line 144, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/navs.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/navs\.less}line{font-family:\00003144}}
@@ -7502,8 +7502,8 @@ a.list-group-item:focus {
 .list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #01b2bb;
+  border-color: #01b2bb;
 }
 /* line 90, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/list-group.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/list-group\.less}line{font-family:\0000390}}
@@ -7523,7 +7523,7 @@ a.list-group-item:focus {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
-  color: #c7ddef;
+  color: #8af9fe;
 }
 /* line 4, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/bootstrap/less/mixins/list-group.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/mixins\/list-group\.less}line{font-family:\000034}}
@@ -10834,21 +10834,21 @@ article {
 }
 /* line 95, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000395}}
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
+.menu.nav > .active > a,
+.menu.nav > .active > a:hover,
+.menu.nav > .active > a:focus {
   background-color: #01B2BB;
   color: white;
 }
-/* line 102, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003102}}
+/* line 99, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000399}}
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: white;
   background-color: #01B2BB;
 }
-/* line 106, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003106}}
+/* line 103, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003103}}
 .front .panels-flexible-region-4_x_3-far_right-inside {
   margin-top: 4em;
 }
