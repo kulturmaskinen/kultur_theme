@@ -76,17 +76,62 @@ function kultur_theme_preprocess_html(&$vars) {
   $path = drupal_get_path_alias();
   $front = "*";
   $events = "arrangementer/*";
-  $workplace = "statisk/værksteder\nstatisk/tekstilværkstedet\nstatisk/lerværkstedet\nstatisk/smykkeværkstedet\nstatisk/mediegrafisk-værksted";
-  if (drupal_match_path($path, $events)) {
+  $news = "nyheder/*";
+  $locations = "rum-og-steder-liste";
+  $locations1 = "rum-og-steder/magasinet*";
+  $locations2 = "rum-og-steder/mødelokaler*";
+  $locations3 = "rum-og-steder/rosenbæk-huset*";
+  $cafe = "statisk/café";
+  $workplace = "statisk/værksteder";
+  $workplace1 = "statisk/tekstilværkstedet*";
+  $workplace2 = "statisk/lerværkstedet*";
+  $workplace3 = "statisk/smykkeværkstedet*";
+  $workplace4 = "statisk/mediegrafisk-værksted*";
+  $om = "statisk/kulturmaskinen";
+  
+  if (drupal_match_path($path, $front)) { 
+    $node = node_load_by_title('forside baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $events)) {
     $node = node_load_by_title('arrangementer baggrund', 'background');
   }
   elseif (drupal_match_path($path, $workplace)) {
-    $node = node_load_by_title('værksted baggrund', 'background');
+    $node = node_load_by_title('værksteder baggrund', 'background');
   }
-  elseif (drupal_match_path($path, $front)) { 
-    $node = node_load_by_title('forside baggrund', 'background');
+  elseif (drupal_match_path($path, $workplace1)) {
+    $node = node_load_by_title('tekstilværkstedet baggrund', 'background');
   }
-
+  elseif (drupal_match_path($path, $workplace2)) {
+    $node = node_load_by_title('lerværkstedet baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $workplace3)) {
+    $node = node_load_by_title('smykkeværkstedet baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $workplace4)) {
+    $node = node_load_by_title('mediegrafisk baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $news)) {
+    $node = node_load_by_title('nyheder baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $locations)) {
+    $node = node_load_by_title('lokaler baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $locations)) {
+    $node = node_load_by_title('magasinet baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $locations)) {
+    $node = node_load_by_title('mødelokaler baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $locations)) {
+    $node = node_load_by_title('rosenbæk baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $cafe)) {
+    $node = node_load_by_title('café baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $om)) {
+    $node = node_load_by_title('om kulturmaskinen baggrund', 'background');
+  }
+  
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
