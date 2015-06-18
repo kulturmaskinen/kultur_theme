@@ -89,10 +89,7 @@ function kultur_theme_preprocess_html(&$vars) {
   $workplace4 = "statisk/mediegrafisk-værksted*";
   $om = "statisk/kulturmaskinen";
   
-  if (drupal_match_path($path, $front)) { 
-    $node = node_load_by_title('forside baggrund', 'background');
-  }
-  elseif (drupal_match_path($path, $events)) {
+  if (drupal_match_path($path, $events)) {
     $node = node_load_by_title('arrangementer baggrund', 'background');
   }
   elseif (drupal_match_path($path, $workplace)) {
@@ -130,6 +127,9 @@ function kultur_theme_preprocess_html(&$vars) {
   }
   elseif (drupal_match_path($path, $om)) {
     $node = node_load_by_title('om kulturmaskinen baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $front)) { 
+    $node = node_load_by_title('forside baggrund', 'background');
   }
   
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
