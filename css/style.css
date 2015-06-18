@@ -10861,3 +10861,19 @@ article {
 .front .panels-flexible-region-4_x_3-far_right-inside {
   margin-top: 4em;
 }
+/* line 111, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003111}}
+.views-field.views-field-created {
+  color: gray;
+}
+/* line 114, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003114}}
+.breadcrumb {
+  background-color: #01B2BB;
+  color: white;
+}
+/* line 118, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003118}}
+.breadcrumb a {
+  color: white;
+}
