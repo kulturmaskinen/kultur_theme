@@ -116,13 +116,13 @@ function kultur_theme_preprocess_html(&$vars) {
   elseif (drupal_match_path($path, $locations)) {
     $node = node_load_by_title('lokaler baggrund', 'background');
   }
-  elseif (drupal_match_path($path, $locations)) {
+  elseif (drupal_match_path($path, $locations1)) {
     $node = node_load_by_title('magasinet baggrund', 'background');
   }
-  elseif (drupal_match_path($path, $locations)) {
+  elseif (drupal_match_path($path, $locations2)) {
     $node = node_load_by_title('mødelokaler baggrund', 'background');
   }
-  elseif (drupal_match_path($path, $locations)) {
+  elseif (drupal_match_path($path, $locations3)) {
     $node = node_load_by_title('rosenbæk baggrund', 'background');
   }
   elseif (drupal_match_path($path, $cafe)) {
