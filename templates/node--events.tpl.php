@@ -178,6 +178,7 @@
           </p>
         <?php endif; ?>    
       <p>
+          <?php if ($content['field_price']['#items'][0]['value'] != -10): ?>
           <i class="glyphicon glyphicon-shopping-cart"></i> 
             <?php if ($content['field_price']['#items'][0]['value'] == -1 || $content['field_price']['#items'][0]['value'] === "0"): ?>
               <?php print t('Free'); ?>
@@ -187,6 +188,7 @@
             <?php print render($content['field_price'][0]); ?>
 	        <?php endif; ?>
       </p>
+       <?php endif; ?> 
       
       <p><?php print render($content['field_attachments']); ?></p>
                 <p><?php print render($content['field_info']); ?></p>
