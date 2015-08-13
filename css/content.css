@@ -56,9 +56,9 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000344}}
 .subheading {
   display: inline-block;
-  width: 73%;
-  margin: 0 1.4em 0.5em 0.5em;
+  margin: 0 1em 0.2em 0.5em;
   position: absolute;
+  width: 80%;
 }
 /* line 50, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000350}}

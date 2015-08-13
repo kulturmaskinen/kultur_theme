@@ -736,16 +736,13 @@ article {
     line-height: 0.429;
 }
 .field-content {
-    font-size: 9pt;
+    font-size: 8pt;
 }
 .field-content > a {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: #fff;
     text-decoration: none;
-}
-.views-field-field-lead {  
-    width: 96%;
 }
 .well {
     padding: 0.5em;
@@ -756,7 +753,7 @@ article {
     border: 1px solid #e3e3e3;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-    min-height: 20px;
+    min-width: 25px;
     padding: 2px;   
 }
 .field.field-name-field-title-image.field-type-image.field-label-hidden img {
@@ -972,6 +969,16 @@ article {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .views-field-field-lead {
+        width: 96%;
+    }
+    .subheading {
+        width: 65%;
+    }
+    .views-field-field-list-image {
+        margin-top: 0.5em;
+        min-height: 90px;
+    }
     .panel-pane.pane-page-content {
         margin-left: 0.5em!important;
         margin-right: 0!important;
