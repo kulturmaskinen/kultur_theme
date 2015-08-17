@@ -10829,7 +10829,7 @@ article {
   padding: 0;
   box-shadow: none;
   border: none;
-  min-width: 100%;
+  width: 100%;
   min-height: 255px;
   border-bottom: 0.1em outset;
   border-left: 0.1em outset;
