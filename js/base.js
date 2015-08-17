@@ -1,6 +1,7 @@
 +function ($) {
 
     $(document).ready(function ($) {
+        return !!('ontouchstart' in window);
       $( "div ul" ).not( ".menu-level-1 ul" ).removeClass('dropdown-menu');
         checkSize();
 // run test on resize of the window
