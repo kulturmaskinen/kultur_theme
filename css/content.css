@@ -1,5 +1,5 @@
-/* line 2, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\000032}}
+/* line 2, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\000032}}
 .nyheder_front_block {
   color: #fff;
   font-size: 14pt;
@@ -10,8 +10,8 @@
   margin-bottom: 0.5em;
   background-color: #d70a8c;
 }
-/* line 12, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000312}}
+/* line 12, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000312}}
 .info_front_block {
   color: #fff;
   font-size: 14pt;
@@ -23,8 +23,8 @@
   margin-right: 0.5em;
   background-color: #d7e132;
 }
-/* line 23, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000323}}
+/* line 23, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000323}}
 .arrangementer_front_block {
   color: #fff;
   font-size: 14pt;
@@ -35,72 +35,72 @@
   margin-bottom: 0.5em;
   background-color: #00b9be;
 }
-/* line 33, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000333}}
+/* line 33, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000333}}
 .dagens-ret {
   color: #D6E033;
   font-weight: bold;
 }
-/* line 37, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000337}}
+/* line 37, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000337}}
 .view-calendar .views-row {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-/* line 41, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000341}}
+/* line 41, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000341}}
 .views-field-field-list-image {
   display: inline-block;
 }
-/* line 44, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000344}}
+/* line 44, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000344}}
 .subheading {
   display: inline-block;
   margin: 0 1em 0.2em 0.5em;
   position: absolute;
 }
-/* line 49, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000349}}
+/* line 49, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000349}}
 .field-name-field-tags .field-item:after {
   content: ",";
 }
-/* line 52, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000352}}
+/* line 52, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000352}}
 .field-name-field-tags .field-item {
   display: inline;
   margin-right: 0.5em;
 }
-/* line 56, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000356}}
+/* line 56, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000356}}
 .views-field-title .field-content > a {
   font-weight: bold;
   font-size: 11pt;
   color: #337ab7;
   text-transform: uppercase;
 }
-/* line 62, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000362}}
+/* line 62, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000362}}
 .view-Nyheder .views-field-title .field-content > a {
   color: #D70A8C;
 }
-/* line 65, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000365}}
+/* line 65, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000365}}
 .view-arrangementer .views-field-title .field-content > a {
   color: #00b9be;
 }
-/* line 68, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000368}}
+/* line 68, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000368}}
 .row {
   margin-left: 0px;
   margin-right: 0px;
 }
-/* line 72, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000372}}
+/* line 72, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000372}}
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-/* line 75, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000375}}
+/* line 75, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000375}}
 .dropdown-menu {
   background-color: #F5F5F5;
   padding: 0;
@@ -112,21 +112,21 @@
   border-left: 0.1em outset;
   border-color: #01b2bb;
 }
-/* line 86, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000386}}
+/* line 86, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000386}}
 .dropdown-menu > li > a {
   color: black;
   text-transform: uppercase;
   padding: 5px 5px;
   font-size: 90%;
 }
-/* line 96, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000396}}
+/* line 96, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000396}}
 .navbar-nav > li > .dropdown-menu {
   border-radius: 0;
 }
-/* line 99, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000399}}
+/* line 99, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\0000399}}
 .menu.nav li > a:hover,
 .menu.nav li > a:focus,
 .active > a {
@@ -134,40 +134,40 @@
   color: white;
   text-decoration: none;
 }
-/* line 104, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003104}}
+/* line 104, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003104}}
 .menu.nav > .active > a,
 .menu.nav > .active > a:hover,
 .menu.nav > .active > a:focus {
   background-color: #01B2BB;
   color: white;
 }
-/* line 108, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003108}}
+/* line 108, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003108}}
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: white;
   background-color: #01B2BB;
 }
-/* line 112, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003112}}
+/* line 112, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003112}}
 .front .panels-flexible-region-4_x_3-far_right-inside {
   margin-top: 4em;
 }
-/* line 115, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003115}}
+/* line 115, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003115}}
 .views-field.views-field-created {
   color: gray;
   margin-top: 0.3em;
 }
-/* line 119, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003119}}
+/* line 119, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003119}}
 .breadcrumb {
   background-color: #01B2BB;
   color: white;
 }
-/* line 123, /var/aegir/platforms/kultur-35/sites/all/themes/kultur_theme/less/content.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-35\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003123}}
+/* line 123, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\00003123}}
 .breadcrumb a {
   color: white;
 }
