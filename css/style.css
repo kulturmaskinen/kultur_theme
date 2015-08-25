@@ -10624,8 +10624,21 @@ article {
   }
 }
 @media only screen and (max-width: 1555px) {
-  /* line 940, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003940}}
+  
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 945, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003945}}
+  .views-field-field-list-image {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 953, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003953}}
   .view-arrangementer .views-field-title .field-content > a {
     max-width: 14em;
     overflow: hidden;
@@ -10635,8 +10648,8 @@ article {
   
     text-overflow: ellipsis;
   }
-  /* line 948, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003948}}
+  /* line 961, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003961}}
   .view-Nyheder .views-field-title .field-content > a {
     max-width: 15em;
     overflow: hidden;
@@ -10646,18 +10659,6 @@ article {
   
     text-overflow: ellipsis;
   }
-}
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /* line 960, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003960}}
-  .views-field-field-list-image {
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-  }
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
   /* line 968, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003968}}
   .dropdown-menu {
