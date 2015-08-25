@@ -393,7 +393,7 @@ html {
 /* line 27, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/bootstrap/less/scaffolding.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/scaffolding\.less}line{font-family:\0000327}}
 body {
-  font-family: "Verdana", Geneva, sans-serif;
+  font-family: "arial", Geneva, sans-serif;
   font-size: 12px;
   line-height: 1.428571429;
   color: #333333;
@@ -8381,7 +8381,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Verdana", Geneva, sans-serif;
+  font-family: "arial", Geneva, sans-serif;
   font-size: 11px;
   font-weight: normal;
   line-height: 1.4;
@@ -8520,7 +8520,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Verdana", Geneva, sans-serif;
+  font-family: "arial", Geneva, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.428571429;
