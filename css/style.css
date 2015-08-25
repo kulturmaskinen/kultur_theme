@@ -10706,6 +10706,11 @@ article {
 .btn {
   padding: 5px 5px;
 }
+/* line 1003, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\000031003}}
+.lead {
+  font-size: 14px;
+}
 /* line 2, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\000032}}
 .nyheder_front_block {
