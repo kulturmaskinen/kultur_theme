@@ -1035,13 +1035,13 @@ article {
 /* line 771, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003771}}
 .view .date-nav-wrapper .date-prev {
-  right: 165px;
+  right: 50%;
   top: 40px;
 }
 /* line 775, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003775}}
 .view .date-nav-wrapper .date-next {
-  right: 75px;
+  right: 20%;
   top: 40px;
 }
 /* line 779, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
