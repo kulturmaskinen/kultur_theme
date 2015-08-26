@@ -1,6 +1,17 @@
 +function ($) {
 
+    jQuery.fn.exists = function () {
+        return this.length > 0;
+    };
+    
+    
     $(document).ready(function ($) {
+        
+        if ($('iframe').exists()) {
+            $('iframe').attr('style', 'position: absolute; left: 0px; top: 0px; width: 100%; height: 100%');
+            $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 55%;');
+        }
+                      
       $( "div ul" ).not( ".menu-level-1 ul" ).removeClass('dropdown-menu');
         checkSize();
 // run test on resize of the window
