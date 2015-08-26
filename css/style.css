@@ -10718,6 +10718,11 @@ article {
 .lead {
   font-size: 14px;
 }
+/* line 1012, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\000031012}}
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0;
+}
 /* line 2, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/content.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/content\.less}line{font-family:\000032}}
 .nyheder_front_block {
