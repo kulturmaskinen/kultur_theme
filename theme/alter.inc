@@ -10,11 +10,14 @@
  * Implements hook_form_alter().
  */
 function kultur_theme_form_alter(array &$form, array &$form_state = array(), $form_id = NULL) {
-  if ($form_id) {
-    switch ($form_id) {
-      case 'user_login':
-        $form['#attributes']['class'][] = "well";
-        break;
-    }
+  switch ($form_id) {
+    case 'search_form':
+      $form['#attributes']['class'][] = "well";
+      break;
+
+    case 'views_exposed_form':
+      $form['title']['#attributes']['placeholder'] = t('Søg efter arrangementer..');
+      $form['field_dato_value']['value']['#attributes']['placeholder'] = t('Søg fra dato..');
+      break;
   }
 }
