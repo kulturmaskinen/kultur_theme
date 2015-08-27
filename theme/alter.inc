@@ -16,7 +16,6 @@ function kultur_theme_form_alter(array &$form, array &$form_state = array(), $fo
       break;
 
     case 'views_exposed_form':
-      $form['title']['#attributes']['placeholder'] = t('Søg efter titel..');
       $form['field_dato_value']['value']['#attributes']['placeholder'] = t('Søg fra dato..');
       break;
   }

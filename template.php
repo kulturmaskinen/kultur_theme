@@ -69,7 +69,8 @@ function node_load_by_title($title, $node_type) {
   }
 }
 
-function kultur_theme_preprocess_html(&$vars) {
+function kultur_theme_preprocess_html(&$vars) { 
+  
   drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(
       'type' => 'external'
   ));
@@ -89,6 +90,12 @@ function kultur_theme_preprocess_html(&$vars) {
   $workplace4 = "statisk/mediegrafisk-værksted*";
   $om = "statisk/kulturmaskinen";
   
+  $fastLiveFilter = "arrangementer/*\nnyheder/*";
+  
+  if (drupal_match_path($path, $fastLiveFilter)) {
+    drupal_add_js(drupal_get_path('theme', 'kultur_theme') . '/js/jquery.fastLiveFilter.min.js', array('weight' => 999));
+  }
+
   if (drupal_match_path($path, $events)) {
     $node = node_load_by_title('arrangementer baggrund', 'background');
   }
