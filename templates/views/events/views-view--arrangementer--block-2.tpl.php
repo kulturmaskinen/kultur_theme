@@ -32,7 +32,7 @@
 <div class="<?php print $classes; ?>">
     <div class="arrangementer_front_block"><i class="fa fa-play" style="font-size:16pt;margin-left:0.3em;margin-top:0.3em;"></i> ARRANGEMENTER</div>
   <?php if (!$is_front) : ?>
-    <div id="search_input_wrapper"><input id="search_input" class="form-control" style="width: auto;" placeholder="Type to filter" /></div>
+    <div id="search_input_wrapper"><input id="search_input" class="form-control" placeholder="Type to filter" /></div>
   <?php endif; ?>    
       <?php print render($title_prefix);?>
   <?php if ($title): ?>
