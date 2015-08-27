@@ -561,7 +561,7 @@ div.password-suggestions ul {
 }
 /* line 421, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003421}}
-#search-block-form.form-search.content-search button.btn.btn-default {
+.form-search button.btn.btn-default {
   border-radius: 5em;
 }
 /* line 426, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
