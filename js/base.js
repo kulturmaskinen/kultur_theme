@@ -12,10 +12,7 @@
             $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
         }
         
-        if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
-            $('#search_input').fastLiveFilter('.fastfilter');
-        }
-                      
+        
       $( "div ul" ).not( ".menu-level-1 ul" ).removeClass('dropdown-menu');
         checkSize();
 // run test on resize of the window
@@ -45,5 +42,13 @@
 $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region-node_view-center').parent());
         }
     }
+
+    Drupal.behaviors.resetSearch = {
+        attach: function (context) {
+            if ($('#search_input').exists() && $.fn.fastLiveFilter !== undefined) {
+                $('#search_input').fastLiveFilter('.fastfilter');
+            }
+        }
+    };
 
 }(jQuery);
