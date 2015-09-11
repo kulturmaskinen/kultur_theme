@@ -192,6 +192,10 @@
       
       <p><?php print render($content['field_attachments']); ?></p>
                 <p><?php print render($content['field_info']); ?></p>
+                
+                <?php if ($field_event_category[0]['taxonomy_term']->name == 'Kultunaut.dk'): ?>
+                <p><?php print ('<a href="http://www.kultunaut.dk/perl/sted/type-nynaut/nr-' . $nid . '">Se mere</a>'); ?></p>
+                <?php endif; ?>   
             </div>
         </div>
     </div>
