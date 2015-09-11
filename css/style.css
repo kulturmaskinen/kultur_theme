@@ -3279,8 +3279,8 @@ fieldset[disabled] .btn-default.active {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/buttons\.less}line{font-family:\0000363}}
 .btn-primary {
   color: #ffffff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #008000;
+  border-color: #006700;
 }
 /* line 11, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/bootstrap/less/mixins/buttons.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/mixins\/buttons\.less}line{font-family:\0000311}}
@@ -3291,8 +3291,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #004d00;
+  border-color: #002900;
 }
 /* line 21, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/bootstrap/less/mixins/buttons.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/mixins\/buttons\.less}line{font-family:\0000321}}
@@ -3321,13 +3321,13 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #008000;
+  border-color: #006700;
 }
 /* line 40, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/bootstrap/less/mixins/buttons.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/bootstrap\/less\/mixins\/buttons\.less}line{font-family:\0000340}}
 .btn-primary .badge {
-  color: #337ab7;
+  color: #008000;
   background-color: #ffffff;
 }
 /* line 67, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/bootstrap/less/buttons.less */
