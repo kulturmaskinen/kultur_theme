@@ -48,6 +48,7 @@ stylesheets[all][] = css/style.css
 scripts[] = 'js/base.js'
 scripts[] = 'js/bootstrap-hover-dropdown.min.js'
 scripts[] = 'js/doubletaptogo.js'
+scripts[] = 'js/equalize.min.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
  settings[bootstrap_cdn] = ''
