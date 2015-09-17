@@ -72,7 +72,7 @@ $wrapper = entity_metadata_wrapper('node', $row->nid);
 $is_extern = $wrapper->field_fra_kultunaut->value(); //this field is not contained in the view $row result
 if($is_extern == true)
 {
-    print '<div title="'.t('Arrangør: Extern').'" class="ribbon ribbon-external" >E</div>';
+    print '<div title="'.t('Arrangør: Ekstern').'" class="ribbon ribbon-external" >E</div>';
 }
 else
 {
