@@ -72,10 +72,10 @@ $wrapper = entity_metadata_wrapper('node', $row->nid);
 $event_type = strtolower($wrapper->field_event_category->value()->name); //this field is not contained in $row
 if($event_type == strtolower("kultunaut.dk"))
 {
-    print '<div title="Extern arrangemant" class="ribbon ribbon-external" >E</div>';
+    print '<div title="'.t('Arrengør: Extern').'" class="ribbon ribbon-external" >E</div>';
 }
 else
 {
-    print '<div title="Kulturmaskinen arrangemant" class="ribbon ribbon-internal" >K</div>';
+    print '<div title="'.t('Arrengør: Kulturmaskinen').'" class="ribbon ribbon-internal" >K</div>';
    
 }
