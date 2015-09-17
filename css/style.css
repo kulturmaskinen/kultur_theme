@@ -10385,8 +10385,8 @@ article {
 }
 /* line 758, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003758}}
-.field.field-name-field-title-image.field-type-image.field-label-hidden img {
-  width: 100%;
+.field-name-field-title-image {
+  text-align: center;
 }
 /* line 761, /var/aegir/platforms/kultur-7.39/sites/all/themes/kultur_theme/less/overrides.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/kultur-7\.39\/sites\/all\/themes\/kultur_theme\/less\/overrides\.less}line{font-family:\00003761}}
