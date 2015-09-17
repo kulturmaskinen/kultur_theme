@@ -103,9 +103,6 @@
                     <p>
                         <?php print render($content['field_lead'][0]); ?>
                     </p>
-                     <?php if ($kultur_theme_place2book_tickets): ?>
-                    <p><?php print render($content['field_place2book_tickets'][0]); ?><p>
-                    <?php endif; ?>
                 </div>
 
                 <div class="content"<?php print $content_attributes; ?>>
@@ -129,7 +126,7 @@
                     print render($content);
                     ?>
                 </div>
-                  <p><?php print render($content['field_galleria']); ?></p>
+                <p><?php print render($content['field_galleria']); ?></p>
                 <div class="page-footer footer">
                     <?php if (!$teaser) : ?>
                       <p><?php print render($content['field_tags']); ?></p>
@@ -161,40 +158,44 @@
             <?php print render($content['field_title_image']); ?>
             <br>
             <div class="info-field">
-                      <p>
-          <i class="glyphicon glyphicon-calendar"></i> <?php print render($content['field_dato'][0]); ?>
-      </p>
-          <p>
-          <i class="glyphicon glyphicon-map-marker"></i> 
-          <?php if ($kultur_theme_event_location): ?>
-            <?php print $kultur_theme_event_location; ?>
-          <?php else: ?>	
-            <?php print t('See event info'); ?>
-          <?php endif; ?>
-        </p>    
-          <?php if (isset($content['field_target'][0])): ?>
-            <p>
-              <i class="glyphicon glyphicon-user"></i> <?php print render($content['field_target'][0]); ?>
-          </p>
-        <?php endif; ?>    
-      <p>
-          <?php if ($content['field_price']['#items'][0]['value'] != -10): ?>
-          <i class="glyphicon glyphicon-shopping-cart"></i> 
-            <?php if ($content['field_price']['#items'][0]['value'] == -1 || $content['field_price']['#items'][0]['value'] === "0"): ?>
-              <?php print t('Free'); ?>
-            <?php elseif (is_null($content['field_price']['#items'][0]['value'])) : ?>
-	          <?php print t('Free registration'); ?>
-	        <?php else: ?>	          
-            <?php print render($content['field_price'][0]); ?>
-	        <?php endif; ?>
-      </p>
-       <?php endif; ?> 
-      
-      <p><?php print render($content['field_attachments']); ?></p>
+                <p>
+                    <i class="glyphicon glyphicon-calendar"></i> <?php print render($content['field_dato'][0]); ?>
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-map-marker"></i> 
+                    <?php if ($kultur_theme_event_location): ?>
+                      <?php print $kultur_theme_event_location; ?>
+                    <?php else: ?>	
+                      <?php print t('See event info'); ?>
+                    <?php endif; ?>
+                </p>    
+                <?php if (isset($content['field_target'][0])): ?>
+                  <p>
+                      <i class="glyphicon glyphicon-user"></i> <?php print render($content['field_target'][0]); ?>
+                  </p>
+                <?php endif; ?>    
+                <p>
+                    <?php if ($content['field_price']['#items'][0]['value'] != -10): ?>
+                      <i class="glyphicon glyphicon-shopping-cart"></i> 
+                      <?php if ($content['field_price']['#items'][0]['value'] == -1 || $content['field_price']['#items'][0]['value'] === "0"): ?>
+                        <?php print t('Free'); ?>
+                      <?php elseif (is_null($content['field_price']['#items'][0]['value'])) : ?>
+                        <?php print t('Free registration'); ?>
+                      <?php else: ?>	          
+                        <?php print render($content['field_price'][0]); ?>
+                      <?php endif; ?>
+                  </p>
+                <?php endif; ?> 
+
+                <p><?php print render($content['field_attachments']); ?></p>
                 <p><?php print render($content['field_info']); ?></p>
-                
-                <?php if ($field_event_category[0]['taxonomy_term']->name == 'Kultunaut.dk'): ?>
-                <p><?php print ('<a target="_blank" href="http://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=' . $nid . '">Se mere</a>'); ?></p>
+
+                <?php if ($kultur_theme_place2book_tickets): ?>
+                  <p><?php print render($content['field_place2book_tickets'][0]); ?><p>
+                    <?php endif; ?>
+
+                    <?php if ($field_event_category[0]['taxonomy_term']->name == 'Kultunaut.dk'): ?>
+                  <p><?php print ('<a target="_blank" href="http://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=' . $nid . '">Se mere</a>'); ?></p>
                 <?php endif; ?>   
             </div>
         </div>
