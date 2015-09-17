@@ -76,7 +76,7 @@
 * place can be chosen
 */
 <!-- Modal -->
-<div id="badge-info-popup" class="modal fade" role="dialog">
+<div id="badge-info-popup" class="modal fade" role="dialog" style="display:none;">
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
