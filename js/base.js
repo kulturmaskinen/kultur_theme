@@ -58,7 +58,7 @@ $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region
     };
     function add_event_badge_touch_events()
     {
-        $('.view-arrangementer').on('tap','.ribbon',function(){
+        $('.view-arrangementer').on('tap click','.ribbon',function(){
             var Title = $(this).attr('title');
             $('#badge-info-popup').find('.modal-body').text(Title);
             $('#badge-info-popup').modal('show');
