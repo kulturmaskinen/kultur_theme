@@ -204,7 +204,7 @@ function kultur_theme_menu_tree__main_menu($vars) {
  *   The name of the template being rendered ("node" in this case.)
  */
 function kultur_theme_preprocess_node(&$variables, $hook) {
-  
+  hide($variables['content']['field_fra_kultunaut']);
     // Add latto_event_location and latto_place2book_tickets to variables (only for ding_event node template)
   if (isset($variables['content']['field_place2book_tickets']['#bundle']) && $variables['content']['field_place2book_tickets']['#bundle'] == 'events') {
     $event_location = 'location';
