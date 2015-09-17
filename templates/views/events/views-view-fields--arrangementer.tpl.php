@@ -69,8 +69,8 @@ foreach ($fields as $id => $field) {
  * external event types: kultunaut.dk
  */
 $wrapper = entity_metadata_wrapper('node', $row->nid);
-$event_type = strtolower($wrapper->field_event_category->value()->name); //this field is not contained in $row
-if($event_type == strtolower("kultunaut.dk"))
+$is_extern = $wrapper->field_fra_kultunaut->value(); //this field is not contained in the view $row result
+if($is_extern == true)
 {
     print '<div title="'.t('Arrangør: Extern').'" class="ribbon ribbon-external" >E</div>';
 }
