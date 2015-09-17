@@ -7,10 +7,10 @@
                
 
         });
-
+    
     $(document).ready(function ($) {
         //$('.dropdown-menu').equalize();
-
+        
         $('.navbar-nav').equalize({children: '.dropdown-menu', equalize: 'height'});
  
         if ($('iframe').exists()) {
@@ -18,7 +18,7 @@
             $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
         }
         
-        
+      add_event_badge_touch_events();
       $( "div ul" ).not( ".menu-level-1 ul" ).removeClass('dropdown-menu');
         checkSize();
 // run test on resize of the window
@@ -48,7 +48,7 @@
 $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region-node_view-center').parent());
         }
     }
-
+    
     Drupal.behaviors.resetSearch = {
         attach: function (context) {
             if ($('#search_input').exists() && $.fn.fastLiveFilter !== undefined) {
@@ -56,5 +56,13 @@ $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region
             }
         }
     };
+    function add_event_badge_touch_events()
+    {
+        $('.ribbon').doubletap(function(){
+            var Title = $(this).attr('title');
+            $('#badge-info-popup').find('.modal-body').text(Title);
+            $('#badge-info-popup').modal('show');
+        });
+    }
 
 }(jQuery);

@@ -74,6 +74,7 @@ function kultur_theme_preprocess_html(&$vars) {
   drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(
       'type' => 'external'
   ));
+  drupal_add_js(drupal_get_path('theme', 'kultur_theme') . '/js/jquery.mobile-events.min.js');
   $path = drupal_get_path_alias();
   $front = "*";
   $events = "arrangementer/*";
@@ -91,7 +92,6 @@ function kultur_theme_preprocess_html(&$vars) {
   $om = "statisk/kulturmaskinen";
   
   $fastLiveFilter = "arrangementer/*\nnyheder/*";
-  
   if (drupal_match_path($path, $fastLiveFilter)) {
     drupal_add_js(drupal_get_path('theme', 'kultur_theme') . '/js/jquery.fastLiveFilter.min.js', array('weight' => 999));
   }
