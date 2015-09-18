@@ -7258,7 +7258,7 @@ article {
 }
 .views-field.views-field-field-dato {
   color: gray;
-  margin-top: 0.3em;
+  margin-top: 0.1em;
 }
 .views-field-field-event-category {
   float: left;
@@ -7413,24 +7413,10 @@ article {
   }
 }
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  .views-field-field-list-image {
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-  }
-}
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   #search_input_wrapper {
     width: 100%;
-  }
-  .view-arrangementer .views-field-title .field-content > a {
-    max-width: 14em;
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    text-overflow: ellipsis;
   }
   .view-Nyheder .views-field-title .field-content > a {
     max-width: 15em;
@@ -7475,22 +7461,6 @@ article {
 }
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 0!important;
-}
-/*
-* Arrangemants block
-*/
-.view-arrangementer,
-.arrangementer_front_block .view-content,
-.views-row {
-  float: left;
-  width: 100%;
-}
-.views-field {
-  width: 50%;
-  float: left;
-}
-img {
-  float: left;
 }
 .arrangementer_front_block {
   color: #fff;
@@ -7541,8 +7511,6 @@ img {
 .subheading {
   display: inline-block;
   margin: 0 1em 0.2em 0.5em;
-  float: left;
-  min-width: 60%;
 }
 .field-name-field-tags .field-item:after {
   content: ",";
@@ -7611,7 +7579,7 @@ img {
 }
 .views-field.views-field-created {
   color: gray;
-  margin-top: 0.3em;
+  margin-top: 0.1em;
 }
 .breadcrumb {
   background-color: #01B2BB;
@@ -7657,25 +7625,242 @@ img {
   border: 3px solid #d70a8c;
   color: black;
 }
-.subheading {
-  width: 55%;
+/*
+* bootstrap is mobile first
+* therefore we define our standard setup here.
+*/
+.views-field-field-list-image {
+  float: left;
+}
+.view-arrangementer .subheading {
+  width: 85%;
+  float: left;
+}
+/*
+    * Arrangemants block
+    */
+.view-arrangementer,
+.view-arrangementer .view-content,
+.views-row {
+  float: left;
+  width: 100%;
+}
+.view-arrangementer .views-row,
+.view-Nyheder .views-row {
+  height: 165px;
+}
+.view-arrangementer .views-field {
+  width: 50%;
+  float: left;
+}
+.view-arrangementer .views-field-field-list-image {
+  width: auto;
+  padding-right: 5px;
+}
+.view-arrangementer .views-field-title {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.view-arrangementer .views-field-field-event-category,
+.view-arrangementer .views-field-field-category {
+  width: auto;
+}
+.view-arrangementer .views-field-field-dato {
+  width: auto;
+}
+.view-arrangementer .views-field-field-rum-og-sted {
+  width: 60%;
+}
+.view-arrangementer .views-field-field-location-name-line {
+  width: 60%;
+}
+.view-arrangementer .views-field-field-lead {
+  width: 60%;
+}
+.view-arrangementer .field-content {
+  float: left;
+}
+.view-arrangementer img {
+  float: left;
+}
+.view-arrangementer .views-field-field-list-image {
+  margin-bottom: 0.6em;
+}
+/*
+    * view-id-Nyheder
+    */
+.view-Nyheder .subheading {
+  width: 100%;
+}
+.view-Nyheder .view-Nyheder img {
+  float: left;
+}
+.view-Nyheder .views-field-title {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.view-Nyheder .views-field-field-lead {
+  float: left;
+  width: 67%;
+}
+.view-Nyheder .views-field-field-list-image {
+  padding-right: 5px;
+}
+.view-arrangementer .views-field-title .field-content > a {
+  max-width: 99%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+/*
+* Landscape overwrites
+*/
+@media (orientation: landscape) {
+  .view-arrangementer .subheading {
+    width: 90%;
+  }
+  .view-arrangementer .views-field-title {
+    width: 100%;
+  }
+  .view-arrangementer .views-field-field-event-category,
+  .view-arrangementer .views-field-field-category {
+    width: auto;
+  }
+  .view-arrangementer .views-field-field-dato {
+    width: auto;
+  }
+  .view-arrangementer .views-field-field-rum-og-sted {
+    width: 70%;
+  }
+  .view-arrangementer .views-field-field-location-name-line {
+    width: 70%;
+  }
+  .view-arrangementer .views-field-field-lead {
+    width: 70%;
+  }
+  .view-arrangementer .views-field-field-list-image {
+    width: auto;
+    padding-right: 5px;
+  }
+  .view-arrangementer .views-field-field-list-image {
+    margin-bottom: 0.6em;
+  }
+  /*
+    * view-id-Nyheder
+    */
+  .view-Nyheder .subheading {
+    width: 100%;
+  }
+  .view-Nyheder .view-Nyheder img {
+    float: left;
+  }
+  .view-Nyheder .views-field-field-lead {
+    float: left;
+    width: 78%;
+  }
+  .view-Nyheder .views-field-field-list-image {
+    padding-right: 5px;
+  }
+  .view-arrangementer .views-row,
+  .view-Nyheder .views-row {
+    height: 122px;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .subheading {
-    width: 73%;
+  .view-arrangementer .subheading {
+    width: 88%;
   }
+  .view-arrangementer .views-row,
+  .view-Nyheder .views-row {
+    height: 165px;
+  }
+  /*
+    * view-id-Nyheder
+    */
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .view-arrangementer .subheading {
+    width: 90%;
+  }
+  .view-arrangementer .views-row,
+  .view-Nyheder .views-row {
+    height: 122px;
+  }
+  /*
+    * view-id-Nyheder
+    */
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .subheading {
-    width: 73%;
+  .view-arrangementer .subheading {
+    width: 72%;
   }
+  .view-arrangementer .views-row,
+  .view-Nyheder .views-row {
+    height: 122px;
+  }
+  /*
+    * view-id-Nyheder
+    */
+}
+@media (min-width: 992px) and (orientation: landscape) {
+  .view-arrangementer .subheading {
+    width: 90%;
+  }
+  .view-arrangementer .views-row,
+  .view-Nyheder .views-row {
+    height: 122px;
+  }
+  /*
+    * view-id-Nyheder
+    */
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .subheading {
-    width: 73%;
+  .view-arrangementer .views-row,
+  .view-Nyheder .views-row {
+    height: 122px;
   }
+  .view-arrangementer .subheading {
+    width: 91%;
+  }
+  .view-arrangementer .views-field-title {
+    width: 100%;
+  }
+  .view-arrangementer .views-field-field-event-category,
+  .view-arrangementer .views-field-field-category {
+    width: auto;
+  }
+  .view-arrangementer .views-field-field-dato {
+    width: auto;
+  }
+  .view-arrangementer .views-field-field-rum-og-sted {
+    width: 79%;
+  }
+  .view-arrangementer .views-field-field-location-name-line {
+    width: 79%;
+  }
+  .view-arrangementer .views-field-field-lead {
+    width: 79%;
+  }
+  /*
+    * view-id-Nyheder
+    */
+}
+@media (min-width: 1200px) and (orientation: landscape) {
+  .view-arrangementer .views-row,
+  .view-Nyheder .views-row {
+    height: 122px;
+  }
+  /*
+    * view-id-Nyheder
+    */
 }
 /*# sourceMappingURL=style.css.map */
