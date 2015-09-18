@@ -71,10 +71,10 @@
   ?>
     </span>
   <?php print $page_bottom; ?>
-/*
+<!--
 * Temporary spot for dialogs , until we are more stramlined 
 * place can be chosen
-*/
+-->
 <!-- Modal -->
 <div id="badge-info-popup" class="modal fade" role="dialog" style="display:none;">
   <div class="modal-dialog">
