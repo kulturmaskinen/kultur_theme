@@ -6,9 +6,8 @@
     {
         float:left;
     }
-
     .view-arrangementer .subheading{
-        width: 88%;
+        width: 99%;
         float:left;
         margin: 0 0.0em 0.2em 0.5em;
     }
@@ -33,15 +32,17 @@
     }
     .view-arrangementer .views-field-field-list-image{
         width: auto;
-        padding-right:5px;
+        padding-right:5px; 
     }
     .view-arrangementer .views-field-title
     {
-        width:100%;
+        width:90%;
         float:left;
         font-size: 14px;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-bottom:4px;
+        margin-top:4px;
     }
     .view-arrangementer .views-field-field-event-category,.view-arrangementer .views-field-field-category
     {
@@ -49,7 +50,7 @@
     }
     .view-arrangementer .views-field-field-dato
     {
-        width: auto;
+        width: 62%;
     }
     .view-arrangementer .views-field-field-rum-og-sted
     {
@@ -60,7 +61,7 @@
         width: 60%;
     }
     .view-arrangementer .views-field-field-lead{
-        width: 60%;
+        width: 67%;
     }
     .view-arrangementer .field-content{
         float:left;
@@ -92,6 +93,7 @@
         font-size: 14px;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-bottom: 4px;
     }
     .view-Nyheder .views-field-field-lead{
         float:left;
@@ -101,11 +103,11 @@
         padding-right: 5px;
     }
     .view-arrangementer .views-field-title .field-content > a {
-        max-width:99%;
+        /*max-width:99%;*/
         width: 100%;
         overflow: hidden;
-        white-space: nowrap;
         display:inline-block;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        word-wrap: break-word;
         
     }
 /*
@@ -113,10 +115,11 @@
 */
 @media (orientation: landscape) { 
     .view-arrangementer .subheading{
-        width: 90%;
+        width: 99%;
     }
     .view-arrangementer .views-field-title
     {
+        font-size: 12px;
         width:100%;
     }
     .view-arrangementer .views-field-field-event-category,.view-arrangementer .views-field-field-category
@@ -168,6 +171,6 @@
     }
     .view-arrangementer .views-row , .view-Nyheder .views-row
     {
-     height: 122px;
+     height: 135px;
     }
 }
