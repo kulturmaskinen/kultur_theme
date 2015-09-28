@@ -80,9 +80,12 @@ function kultur_theme_preprocess_html(&$vars) {
   $events = "arrangementer/*";
   $news = "nyheder/*";
   $locations = "rum-og-steder-liste";
-  $locations1 = "rum-og-steder/magasinet*";
-  $locations2 = "rum-og-steder/mødelokaler*";
-  $locations3 = "rum-og-steder/rosenbæk-huset*";
+  $locations1 = "*/magasinet*";
+  $locations2 = "*/mødelokaler*";
+  $locations3 = "*/rosenbæk-huset*";
+  $locations4 = "*/amfiscenen*";
+  $locations5 = "*/store-sal*";
+  $locations6 = "*/farvergården*";
   $cafe = "statisk/café";
   $workplace = "statisk/værksteder";
   $workplace1 = "*/tekstilværkstedet*";
@@ -124,6 +127,15 @@ function kultur_theme_preprocess_html(&$vars) {
   }
   elseif (drupal_match_path($path, $locations3)) {
     $node = node_load_by_title('rosenbæk baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $locations4)) {
+    $node = node_load_by_title('amfiscenen baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $locations5)) {
+    $node = node_load_by_title('store-sal baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $locations6)) {
+    $node = node_load_by_title('farvergården baggrund', 'background');
   }
   elseif (drupal_match_path($path, $cafe)) {
     $node = node_load_by_title('café baggrund', 'background');
