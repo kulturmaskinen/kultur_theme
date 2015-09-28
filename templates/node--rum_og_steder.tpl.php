@@ -146,7 +146,7 @@
 
         </div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top" style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top" style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
             <?php print render($content['field_title_image']); ?>
             <br>
             <div class="info-field">
