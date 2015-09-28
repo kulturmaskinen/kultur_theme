@@ -85,10 +85,9 @@ function kultur_theme_preprocess_html(&$vars) {
   $locations3 = "rum-og-steder/rosenbæk-huset*";
   $cafe = "statisk/café";
   $workplace = "statisk/værksteder";
-  $workplace1 = "statisk/tekstilværkstedet*";
-  $workplace2 = "statisk/lerværkstedet*";
-  $workplace3 = "statisk/smykkeværkstedet*";
-  $workplace4 = "statisk/mediegrafisk-værksted*";
+  $workplace1 = "*/tekstilværkstedet*";
+  $workplace2 = "*/lerværkstedet*";
+  $workplace3 = "*/mediegrafisk-værksted*";
   $om = "statisk/kulturmaskinen";
   
   $fastLiveFilter = "arrangementer/*\nnyheder/*";
@@ -109,9 +108,6 @@ function kultur_theme_preprocess_html(&$vars) {
     $node = node_load_by_title('lerværkstedet baggrund', 'background');
   }
   elseif (drupal_match_path($path, $workplace3)) {
-    $node = node_load_by_title('smykkeværkstedet baggrund', 'background');
-  }
-  elseif (drupal_match_path($path, $workplace4)) {
     $node = node_load_by_title('mediegrafisk baggrund', 'background');
   }
   elseif (drupal_match_path($path, $news)) {
