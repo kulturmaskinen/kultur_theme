@@ -85,10 +85,10 @@ function kultur_theme_preprocess_html(&$vars) {
   $locations3 = "rum-og-steder/rosenbæk-huset*";
   $cafe = "statisk/café";
   $workplace = "statisk/værksteder";
-  $workplace1 = "statisk/tekstilværkstedet*";
-  $workplace2 = "statisk/lerværkstedet*";
-  $workplace3 = "statisk/smykkeværkstedet*";
-  $workplace4 = "statisk/mediegrafisk-værksted*";
+  $workplace1 = "statisk/værksteder/tekstilværkstedet*";
+  $workplace2 = "statisk/værksteder/lerværkstedet*";
+  $workplace3 = "*/smykkeværkstedet*";
+  $workplace4 = "*/mediegrafisk-værksted*";
   $om = "statisk/kulturmaskinen";
   
   $fastLiveFilter = "arrangementer/*\nnyheder/*";
