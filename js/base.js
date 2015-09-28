@@ -10,7 +10,7 @@
     
     $(document).ready(function ($) {
         //$('.dropdown-menu').equalize();
-        if ($(window).width() <= 800){	
+        if ($(window).width() >= 800){	
 		$('.navbar-nav').equalize({children: '.dropdown-menu', equalize: 'height'});
 	}	
         
