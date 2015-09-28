@@ -10,9 +10,10 @@
     
     $(document).ready(function ($) {
         //$('.dropdown-menu').equalize();
+        if ($(window).width() <= 800){	
+		$('.navbar-nav').equalize({children: '.dropdown-menu', equalize: 'height'});
+	}	
         
-        $('.navbar-nav').equalize({children: '.dropdown-menu', equalize: 'height'});
- 
         if ($('iframe').exists()) {
             $('iframe').attr('style', 'position: absolute; left: 0px; top: 0px; width: 100%; height: 100%');
             $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');

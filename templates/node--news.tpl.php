@@ -89,7 +89,7 @@
 
                 <?php print $user_picture; ?>
 
-                <h2 style="color:#D70A8C;"><?php print $title ?></h2>
+                <h2><?php print $title ?></h2>
 
                 <?php if (!$page): ?>
                   <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -101,7 +101,9 @@
                     </span>
                     <br><br>
                     <p>
+                        <span style="color:#D70A8C;">
                         <?php print render($content['field_lead'][0]); ?>
+                        </span>
                     </p>
                 </div>
 
