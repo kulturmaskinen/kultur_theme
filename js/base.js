@@ -83,7 +83,7 @@ $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region
                 else if ($(this).html().match("^Farvergården")) {
                     $(this).replaceWith('<a href="rum-og-steder/farvergården">' + $(this).html() + '</a>');
                 }
-                else if ($(this).html().match("^Kulturmaskinen - Store sal")) {
+                else if ($(this).html().match("Store sal $")) {
                     $(this).replaceWith('<a href="rum-og-steder/store-sal">' + $(this).html() + '</a>');
                 }
                 else if ($(this).html().match("^Rosenbæk Huset")) {
