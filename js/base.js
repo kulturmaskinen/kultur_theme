@@ -27,7 +27,7 @@
 
     Drupal.behaviors.checkSize = {
        attach: function (context) {
-            $('.pane-page-content').css("height", $(document).height() - 270);
+            //$('.pane-page-content').css("height", $(document).height() - 270);
 
             if ($(window).width() < 768) {
 
