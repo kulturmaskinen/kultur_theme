@@ -373,7 +373,39 @@ $element['#localized_options']['attributes']['data-close-others'] = 'false';
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
-
+/*
+ * theme hook overwrite for theme_date_nav_title() in the date module.
+ * Allows us to change the date format of the calendar title from hardcoded default.
+ */
+function kultur_theme_date_nav_title($params) {
+switch($params['granularity'])
+{
+    case 'month':
+    {
+        $params['format'] = 'F Y';
+        $output = theme_date_nav_title($params);
+        break;
+    }
+    case 'week':
+    {
+        $params['format'] = "W";
+        $output = theme_date_nav_title($params);
+        break;
+    }
+    case 'day':
+    {
+        $params['format'] = "l";
+        $output = theme_date_nav_title($params);
+        break;
+    }
+    default:
+    {
+        $output = theme_date_nav_title($params);
+        break;
+    }
+}
+ return $output;
+}
 /**
  * Declare various hook_*_alter() hooks.
  *
