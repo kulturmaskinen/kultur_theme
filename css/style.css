@@ -7367,6 +7367,9 @@ article {
 .view .date-nav-wrapper .date-prev {
   position: unset;
 }
+.view .date-nav-wrapper .date-next {
+  right: 44%;
+}
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
