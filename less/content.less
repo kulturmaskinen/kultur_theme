@@ -153,7 +153,7 @@
   cursor: pointer;
   border-radius: 50%;
   z-index: 999; /*make sure always on top*/
-  right: 5px;
+  right: 7px;
 }
 .ribbon-internal
 { 
@@ -166,4 +166,45 @@
      border: 3px solid #d70a8c;
      color:black
    
+}
+/*
+* calendar module css overwrites
+*/
+body > div.panel-flexible.container-fluid.clearfix > div > div.panels-flexible-row.panels-flexible-row-container-fluid-1.panels-flexible-row-first.clearfix.Top > div > div.panels-flexible-row.panels-flexible-row-container-fluid-main-row.clearfix > div > div > div > div.panel-pane.pane-page-content > div > div > div.view-content > div > div > table > tbody:nth-child(5) > tr > td.calendar-agenda-items.multi-day > div > div > div > div > div{
+    height: auto !important;
+    
+}
+body > div.panel-flexible.container-fluid.clearfix > div > div.panels-flexible-row.panels-flexible-row-container-fluid-1.panels-flexible-row-first.clearfix.Top > div > div.panels-flexible-row.panels-flexible-row-container-fluid-main-row.clearfix > div > div > div > div.panel-pane.pane-page-content > div > div > div.view-content > div > div > table > tbody:nth-child(5) > tr > td.calendar-agenda-items.multi-day > div > div > div > div > div > div.calendar\2e 9870440\2e field_dagens_ret_dato\2e 0\2e 0.contents > div.views-field.views-field-field-br-dtekst > div
+{
+    margin-left: 0px !important;
+}
+.monthview{
+    background-color: #01b2bb !important;
+    color: white;
+    min-height: 100px;
+}
+.monthview a{
+    color: white !important;
+}
+.monthview a:visited{
+    color: white !important;
+}
+.calendar.weekview .contents
+{
+    position:relative !important;
+    width: 100% !important;
+}
+.calendar.weekview .contents a{
+    color: white;
+}
+.calendar.weekview .contents a:visited{
+    color: white;
+}
+.calendar-calendar .week-view .full td.multi-day div.weekview{
+height: 100% !important;
+min-height: 100px;
+}
+.calendar-agenda-items
+{
+    color: white;
 }
