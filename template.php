@@ -383,7 +383,7 @@ switch($params['granularity'])
     case 'month':
     {
         $params['format'] = 'F Y';
-        $output = theme_date_nav_title($params);
+        $output = ucfirst(theme_date_nav_title($params));
         break;
     }
     case 'week':
@@ -398,7 +398,10 @@ switch($params['granularity'])
         $output = theme_date_nav_title($params);
         
         $params['format'] = "j";
-        $output .= " d." .theme_date_nav_title($params);
+        $output .= " d. " .theme_date_nav_title($params);
+        
+         $params['format'] = "F";
+        $output .= ". ". theme_date_nav_title($params);
         break;
     }
     default:
