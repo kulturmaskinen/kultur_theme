@@ -7665,8 +7665,8 @@ body > div.panel-flexible.container-fluid.modal-footer > div > div.panels-flexib
 }
 .monthview {
   background-color: #01b2bb !important;
-  color: white;
-  min-height: 100px;
+  color: white !important;
+  min-height: 100px !important;
 }
 .monthview a {
   color: white !important;
@@ -7679,17 +7679,17 @@ body > div.panel-flexible.container-fluid.modal-footer > div > div.panels-flexib
   width: 100% !important;
 }
 .calendar.weekview .contents a {
-  color: white;
+  color: white !important;
 }
 .calendar.weekview .contents a:visited {
-  color: white;
+  color: white !important;
 }
 .calendar-calendar .week-view .full td.multi-day div.weekview {
   height: 100% !important;
-  min-height: 100px;
+  min-height: 100px !important;
 }
 .calendar-agenda-items {
-  color: white;
+  color: white !important;
 }
 /*
 * bootstrap is mobile first
