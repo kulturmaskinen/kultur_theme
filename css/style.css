@@ -7635,25 +7635,25 @@ article {
 .dayview {
   height: auto !important;
 }
+.dayview .views-field-title {
+  font-size: 18px;
+}
 .monthview {
-  background-color: #01b2bb !important;
+  background-color: #002e5e !important;
   color: white !important;
   min-height: 100px !important;
 }
-.monthview a {
+.monthview {
   color: white !important;
 }
-.monthview a:visited {
-  color: white !important;
+.monthview .views-field-title {
+  font-size: 18px;
 }
 .calendar.weekview .contents {
   position: relative !important;
   width: 100% !important;
 }
-.calendar.weekview .contents a {
-  color: white !important;
-}
-.calendar.weekview .contents a:visited {
+.calendar.weekview .contents {
   color: white !important;
 }
 .calendar-calendar .week-view .full td.multi-day div.weekview {
