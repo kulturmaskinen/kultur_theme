@@ -396,6 +396,9 @@ switch($params['granularity'])
     {
         $params['format'] = "l";
         $output = theme_date_nav_title($params);
+        
+        $params['format'] = "j";
+        $output .= " d." .theme_date_nav_title($params);
         break;
     }
     default:
