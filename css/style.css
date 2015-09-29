@@ -7373,6 +7373,26 @@ article {
 .view-id-similarterms .view-content .views-field-title a {
   color: #00b9be;
 }
+.view-calendar.view-display-id-block_2 .views-row {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.view-calendar.view-display-id-block_2 .views-row {
+  padding: 0px;
+  border: 0px;
+}
+.view-calendar.view-display-id-block_2 .views-row .dagens-ret {
+  background-color: #d6e033;
+  color: white;
+  margin: 0px;
+  padding: 5px;
+}
+.view-calendar.view-display-id-block_2 .views-row .views-field-title {
+  margin-left: 10px;
+}
+.view-calendar.view-display-id-block_2 .views-row .views-field-field-br-dtekst {
+  margin-left: 10px;
+}
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
