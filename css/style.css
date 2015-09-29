@@ -7370,6 +7370,9 @@ article {
 .view .date-nav-wrapper .date-next {
   right: 44%;
 }
+.view-id-similarterms .view-content .views-field-title a {
+  color: #00b9be;
+}
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
