@@ -827,11 +827,51 @@ article {
 .well-yellow .pane-title {
     font-weight: bold;
 }
+/*
+* calendar module css overwrites
+*/
+.dayview{
+    height: auto !important;
+}
+.dayview .views-field-title
+{
+     font-size: 18px;
+}
+.monthview{
+    background-color: #002e5e !important;
+    color: white !important;
+    min-height: 100px !important;
+}
+.monthview{
+    color: white !important;
+    
+}
+.monthview .views-field-title
+{
+   font-size: 18px;
+}
+
+.calendar.weekview .contents
+{
+    position:relative !important;
+    width: 100% !important;
+}
+.calendar.weekview .contents{
+    color: white !important;
+}
+.calendar-calendar .week-view .full td.multi-day div.weekview{
+height: 100% !important;
+min-height: 100px !important;
+}
+.calendar-agenda-items
+{
+    color: white !important;
+}
 .calendar-calendar .month-view .full td.multi-day div.monthview, .calendar-calendar .week-view .full td.multi-day div.weekview, .calendar-calendar .day-view .full td.multi-day div.dayview {
-    background: none repeat scroll 0 0 #01BABD;
+    background: none repeat scroll 0 0 #002e5e;
 }
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
-    background: none repeat scroll 0 0 #01BABD;
+    background: none repeat scroll 0 0 #002e5e;
 }
 .calendar .field-content > a {
     color: #000;
