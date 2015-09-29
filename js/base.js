@@ -8,7 +8,8 @@
 
         });
     
-    $(document).ready(function ($) {
+    $(document).ready(function ($) {               
+                   
         //$('.dropdown-menu').equalize();
         if ($(window).width() >= 800){	
 		$('.navbar-nav').equalize({children: '.dropdown-menu', equalize: 'height'});
@@ -65,5 +66,31 @@ $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region
             $('#badge-info-popup').modal('show');
         });
     }
+    
+      
+    Drupal.behaviors.replaceLocation = {
+        attach: function (context) {
+            $('.views-field-field-location-name-line .field-content').each(function () {         
+                if ($(this).html().match("^Magasinet")) {
+                    $(this).replaceWith('<a href="rum-og-steder/magasinet">' + $(this).html() + '</a>');
+                }
+                else if ($(this).html().match("^Kulturmaskinen")) {
+                    $(this).replaceWith('<a href="rum-og-steder/mødelokaler">' + $(this).html() + '</a>');
+                }
+                else if ($(this).html().match("^Amfiscenen")) {
+                    $(this).replaceWith('<a href="rum-og-steder/amfiscenen">' + $(this).html() + '</a>');
+                }
+                else if ($(this).html().match("^Farvergården")) {
+                    $(this).replaceWith('<a href="rum-og-steder/farvergården">' + $(this).html() + '</a>');
+                }
+                else if ($(this).html().match("^Kulturmaskinen - Store sal")) {
+                    $(this).replaceWith('<a href="rum-og-steder/store-sal">' + $(this).html() + '</a>');
+                }
+                else if ($(this).html().match("^Rosenbæk Huset")) {
+                    $(this).replaceWith('<a href="rum-og-steder/rosenbæk-huset">' + $(this).html() + '</a>');
+                }
+            });
+        }
+    };
 
 }(jQuery);
