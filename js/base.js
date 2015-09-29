@@ -70,8 +70,11 @@ $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region
       
     Drupal.behaviors.replaceLocation = {
         attach: function (context) {
-            $('.views-field-field-location-name-line .field-content').each(function () {         
-                if ($(this).html().match("^Magasinet")) {
+            $('.views-field-field-location-name-line .field-content').each(function () {
+                if ($(this).html().match("^Kulturmaskinen - Store sal ")) {
+                    $(this).replaceWith('<a href="/rum-og-steder/store-sal">' + $(this).html() + '</a>');
+                }
+                else if ($(this).html().match("^Magasinet")) {
                     $(this).replaceWith('<a href="/rum-og-steder/magasinet">' + $(this).html() + '</a>');
                 }
                 else if ($(this).html().match("^Kulturmaskinen")) {
@@ -82,9 +85,6 @@ $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region
                 }
                 else if ($(this).html().match("^Farvergården")) {
                     $(this).replaceWith('<a href="/rum-og-steder/farvergården">' + $(this).html() + '</a>');
-                }
-                else if ($(this).html().match("Kulturmaskinen - Store sal ")) {
-                    $(this).replaceWith('<a href="/rum-og-steder/store-sal">' + $(this).html() + '</a>');
                 }
                 else if ($(this).html().match("^Rosenbæk Huset")) {
                     $(this).replaceWith('<a href="/rum-og-steder/rosenbæk-huset">' + $(this).html() + '</a>');
