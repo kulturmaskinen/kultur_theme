@@ -8,46 +8,47 @@
 
         });
     
-    $(document).ready(function ($) {               
-                   
+    $(document).ready(function ($) {
+
         //$('.dropdown-menu').equalize();
-        if ($(window).width() >= 800){	
-		$('.navbar-nav').equalize({children: '.dropdown-menu', equalize: 'height'});
-	}	
-        
+        if ($(window).width() >= 800) {
+            $('.navbar-nav').equalize({children: '.dropdown-menu', equalize: 'height'});
+        }
+
         if ($('iframe').exists()) {
             $('iframe').attr('style', 'position: absolute; left: 0px; top: 0px; width: 90%; height: 100%');
             $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
         }
-        
-      add_event_badge_touch_events();
-      $( "div ul" ).not( ".menu-level-1 ul" ).removeClass('dropdown-menu');
 
+        add_event_badge_touch_events();
+        $("div ul").not(".menu-level-1 ul").removeClass('dropdown-menu');
+        checkSize();
+// run test on resize of the window
+        $(window).resize(checkSize);
     });
+    
+    function checkSize() {
+        //$('.pane-page-content').css("height", $(document).height() - 270);
 
-    Drupal.behaviors.checkSize = {
-       attach: function (context) {
-            //$('.pane-page-content').css("height", $(document).height() - 270);
+        if ($(window).width() < 768) {
 
             if ($(window).width() < 768) {
 
-            if ($(window).width() < 768) {
-            
-            $('.col-lg-2 .col-md-4 .col-sm-4 .col-xs-12 .col-sm-height .col-md-height .col-xs-height .col-full-height .col-top').prependTo($('.col-lg-5 .col-md-6 .col-sm-6 .col-xs-12 .col-xs-height .col-full-height').parent());
-                    $('h2').prependTo($('.col-lg-5 .col-md-6 .col-sm-6 .col-xs-12 .col-xs-height .col-full-height').parent());
+                $('.col-lg-2 .col-md-4 .col-sm-4 .col-xs-12 .col-sm-height .col-md-height .col-xs-height .col-full-height .col-top').prependTo($('.col-lg-5 .col-md-6 .col-sm-6 .col-xs-12 .col-xs-height .col-full-height').parent());
+                $('h2').prependTo($('.col-lg-5 .col-md-6 .col-sm-6 .col-xs-12 .col-xs-height .col-full-height').parent());
             } else {
 
-            $('.col-lg-5 .col-md-6 .col-sm-6 .col-xs-12 .col-xs-height .col-full-height').prependTo($('.col-lg-2 .col-md-4 .col-sm-4 .col-xs-12 .col-sm-height .col-md-height .col-xs-height .col-full-height .col-top').parent());
-                    $('.col-lg-2 .col-md-4 .col-sm-4 .col-xs-12 .col-sm-height .col-md-height .col-xs-height .col-full-height .col-top').prependTo($('h2').parent());
+                $('.col-lg-5 .col-md-6 .col-sm-6 .col-xs-12 .col-xs-height .col-full-height').prependTo($('.col-lg-2 .col-md-4 .col-sm-4 .col-xs-12 .col-sm-height .col-md-height .col-xs-height .col-full-height .col-top').parent());
+                $('.col-lg-2 .col-md-4 .col-sm-4 .col-xs-12 .col-sm-height .col-md-height .col-xs-height .col-full-height .col-top').prependTo($('h2').parent());
             }
 
             $('.panels-flexible-region-node_view-center').prependTo($('.panels-flexible-region-node_view-left').parent());
-                } else {
+        } else {
 
             $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region-node_view-center').parent());
-            }
         }
-     };
+    }
+};
     
     Drupal.behaviors.resetSearch = {
         attach: function (context) {
