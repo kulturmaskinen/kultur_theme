@@ -7561,6 +7561,9 @@ article {
   display: inline-block;
   float: left;
 }
+.showmore {
+  margin-bottom: 2em;
+}
 /*
 * Blandet
 */
