@@ -3,11 +3,6 @@
     jQuery.fn.exists = function () {
         return this.length > 0;
     };
-                        $(window).load(function() {
-               
-
-        });
-    
     $(document).ready(function ($) {
 
         //$('.dropdown-menu').equalize();
@@ -61,7 +56,6 @@
             $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region-node_view-center').parent());
         }
     }
-};
     
     Drupal.behaviors.resetSearch = {
         attach: function (context) {
@@ -72,6 +66,7 @@
     };
     function add_event_badge_touch_events()
     {
+        debugger;
         if(!detectIE())
         {
             $('.view-arrangementer').on('tap','.ribbon',function(){
