@@ -89,7 +89,7 @@
 
                 <?php print $user_picture; ?>
 
-                <h2 class="node-title"><?php print $title ?></h2>
+                <h2><?php print $title ?></h2>
                 <?php print render($content['field_title_image']); ?>
                 <?php if (!$page): ?>
                   <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>

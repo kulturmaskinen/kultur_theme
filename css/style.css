@@ -7371,31 +7371,12 @@ article {
 .view .date-nav-wrapper .date-prev {
   position: unset;
 }
-.view-id-similarterms .view-content .views-field-title a {
-  color: #00b9be;
-}
 .pane-views-similarterms-block h2 {
   padding: 0px;
   margin: 0px;
   margin-bottom: 20px;
   color: white;
   font-weight: normal;
-}
-/*
-* similar terms select campaigns is not floating to bottom
-* because not all panel classes are floating.
-*/
-panels-flexible-region-node_view-right-inside {
-  float: left;
-}
-.pane-views-similarterms-block .pane-content {
-  float: left;
-}
-.pane-views-similarterms-block {
-  background-color: #00b9be;
-  border-color: #00b9be;
-  margin-top: 9px;
-  height: 35px;
 }
 .view-calendar.view-display-id-block_2 .views-row {
   padding-left: 0px;
