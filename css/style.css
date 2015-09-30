@@ -7734,9 +7734,6 @@ panels-flexible-region-node_view-right-inside {
 * bootstrap is mobile first
 * therefore we define our standard setup here.
 */
-.view .date-nav-wrapper .date-next {
-  right: 5%;
-}
 .views-field-field-list-image {
   float: left;
 }
@@ -7929,6 +7926,9 @@ panels-flexible-region-node_view-right-inside {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .view .date-nav-wrapper .date-next {
+    right: 40%;
+  }
   .view-arrangementer .subheading {
     width: 72%;
   }
@@ -7941,6 +7941,9 @@ panels-flexible-region-node_view-right-inside {
     */
 }
 @media (min-width: 992px) and (orientation: landscape) {
+  .view .date-nav-wrapper .date-next {
+    right: 40%;
+  }
   .view-arrangementer .subheading {
     width: 90%;
   }
