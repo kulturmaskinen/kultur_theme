@@ -7901,6 +7901,9 @@ panels-flexible-region-node_view-right-inside {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .view .date-nav-wrapper .date-next {
+    right: 25%;
+  }
   .view-arrangementer .subheading {
     width: 99%;
   }
