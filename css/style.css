@@ -7367,9 +7367,6 @@ article {
 .view .date-nav-wrapper .date-prev {
   position: unset;
 }
-.view .date-nav-wrapper .date-next {
-  right: 44%;
-}
 .view-id-similarterms .view-content .views-field-title a {
   color: #00b9be;
 }
@@ -7737,6 +7734,9 @@ panels-flexible-region-node_view-right-inside {
 * bootstrap is mobile first
 * therefore we define our standard setup here.
 */
+.view .date-nav-wrapper .date-next {
+  right: 5%;
+}
 .views-field-field-list-image {
   float: left;
 }
@@ -7954,6 +7954,9 @@ panels-flexible-region-node_view-right-inside {
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .view .date-nav-wrapper .date-next {
+    right: 44%;
+  }
   .view-arrangementer .views-row,
   .view-Nyheder .views-row {
     height: auto;
@@ -7990,6 +7993,9 @@ panels-flexible-region-node_view-right-inside {
   }
 }
 @media (min-width: 1200px) and (orientation: landscape) {
+  .view .date-nav-wrapper .date-next {
+    right: 44%;
+  }
   .view-arrangementer .views-row,
   .view-Nyheder .views-row {
     height: auto;

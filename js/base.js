@@ -66,7 +66,6 @@
     };
     function add_event_badge_touch_events()
     {
-        debugger;
         if(!detectIE())
         {
             $('.view-arrangementer').on('tap','.ribbon',function(){
