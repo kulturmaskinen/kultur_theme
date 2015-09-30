@@ -23,8 +23,21 @@
         add_event_badge_touch_events();
         $("div ul").not(".menu-level-1 ul").removeClass('dropdown-menu');
         checkSize();
-// run test on resize of the window
+        // run test on resize of the window
         $(window).resize(checkSize);
+        /*
+         * Remove month and week tabs for calendar on mobile.
+         */
+        if($('.calendar-calendar').length > 0)
+        {
+            var elems = $('.tabs--primary li').not(".active");
+            elems.hide();
+        }
+        /*
+         * Change links so mobile users cant get month and week 
+         */
+        $(".view-id-calendar .views-field-title a").attr('href','/calendar-node-field-dato/day');
+        $(".view-id-calendar .views-field-field-br-dtekst a").attr('href','/calendar-node-field-dato/day');
     });
     
     function checkSize() {
@@ -33,7 +46,7 @@
         if ($(window).width() < 768) {
 
             if ($(window).width() < 768) {
-
+                
                 $('.col-lg-2 .col-md-4 .col-sm-4 .col-xs-12 .col-sm-height .col-md-height .col-xs-height .col-full-height .col-top').prependTo($('.col-lg-5 .col-md-6 .col-sm-6 .col-xs-12 .col-xs-height .col-full-height').parent());
                 $('h2').prependTo($('.col-lg-5 .col-md-6 .col-sm-6 .col-xs-12 .col-xs-height .col-full-height').parent());
             } else {
