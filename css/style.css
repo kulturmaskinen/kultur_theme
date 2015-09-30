@@ -7901,6 +7901,9 @@ panels-flexible-region-node_view-right-inside {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .arrangementer_front_block {
+    display: inline-block;
+  }
   .view .date-nav-wrapper .date-next {
     right: 37%;
   }
@@ -7923,7 +7926,7 @@ panels-flexible-region-node_view-right-inside {
   .view-arrangementer .views-row,
   .view-Nyheder .views-row {
     height: auto;
-    min-height: 145px;
+    min-height: 155px;
   }
   /*
     * view-id-Nyheder
