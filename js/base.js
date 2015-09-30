@@ -47,10 +47,13 @@
                  */
                 $('.col-lg-2.col-md-4.col-sm-4.col-xs-12.col-sm-height.col-md-height.col-xs-height.col-full-height.col-top').prependTo($('.col-lg-5.col-md-6.col-sm-6.col-xs-12.col-xs-height.col-full-height').parent());
                 $('h2').prependTo($('.col-lg-5.col-md-6.col-sm-6.col-xs-12.col-xs-height.col-full-height').parent());
+                $('.showmore').prependTo($('.page-footer').parent());
+                
             } else {
 
                 $('.col-lg-5.col-md-6.col-sm-6.col-xs-12.col-xs-height.col-full-height').prependTo($('.col-lg-2.col-md-4.col-sm-4.col-xs-12.col-sm-height.col-md-height.col-xs-height.col-full-height.col-top').parent());
                 $('.col-lg-2.col-md-4.col-sm-4.col-xs-12.col-sm-height.col-md-height.col-xs-height.col-full-height.col-top').prependTo($('h2').parent());
+                $('.showmore').prependTo($('.field-name-field-info').children());
             }
 
             $('.panels-flexible-region-node_view-center').prependTo($('.panels-flexible-region-node_view-left').parent());

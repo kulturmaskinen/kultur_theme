@@ -196,7 +196,7 @@
                   <p><?php print render($content['field_place2book_tickets'][0]); ?><p>
                     <?php endif; ?>
                     <?php if ($field_vis_mere['und'][0] == true): ?>
-                  <p><?php print ('<a target="_blank" href="http://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=' . $nid . '">Se mere</a>'); ?></p>
+                  <div class="showmore"><?php print ('<a target="_blank" href="http://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=' . $nid . '">Se mere</a>'); ?></div>
                 <?php endif; ?>      
             </div>
         </div>
