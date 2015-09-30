@@ -7917,7 +7917,7 @@ panels-flexible-region-node_view-right-inside {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .view .date-nav-wrapper .date-next {
-    right: 5%;
+    right: 37%;
   }
   .view-arrangementer .subheading {
     width: 99%;
@@ -7978,7 +7978,7 @@ panels-flexible-region-node_view-right-inside {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .view .date-nav-wrapper .date-next {
-    right: 44%;
+    right: 42%;
   }
   .view-arrangementer .views-row,
   .view-Nyheder .views-row {
@@ -8017,7 +8017,7 @@ panels-flexible-region-node_view-right-inside {
 }
 @media (min-width: 1200px) and (orientation: landscape) {
   .view .date-nav-wrapper .date-next {
-    right: 44%;
+    right: 42%;
   }
   .view-arrangementer .views-row,
   .view-Nyheder .views-row {
