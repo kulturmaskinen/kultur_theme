@@ -7247,6 +7247,9 @@ article {
 .footer {
   border-top: medium none;
 }
+.page-footer {
+  margin-top: 0!important;
+}
 .view-display-id-block_2 .views-field-title .field-content > a {
   color: #000;
   font-weight: normal;
