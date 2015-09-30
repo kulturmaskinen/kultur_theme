@@ -7376,6 +7376,7 @@ article {
 .pane-views-similarterms-block h2 {
   padding: 0px;
   margin: 0px;
+  margin-bottom: 0.5em;
 }
 .pane-views-similarterms-block {
   background-color: #00b9be;
