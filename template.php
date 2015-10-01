@@ -86,7 +86,7 @@ function kultur_theme_preprocess_html(&$vars) {
   $locations4 = "*/amfiscenen*";
   $locations5 = "*/store-sal*";
   $locations6 = "*/farvergården*";
-  $cafe = "statisk/café";
+  $cafe = "statisk/café*";
   $workplace = "statisk/værksteder";
   $workplace1 = "*/tekstilværkstedet*";
   $workplace2 = "*/lerværkstedet*";
