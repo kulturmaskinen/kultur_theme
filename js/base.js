@@ -101,7 +101,13 @@
                 else if ($(this).html().match("^Magasinet")) {
                     $(this).replaceWith('<a href="/rum-og-steder/magasinet">' + $(this).html() + '</a>');
                 }
-                else if ($(this).html().match("^Kulturmaskinen")) {
+                else if ($(this).html().match("^Kulturmaskinen - Tekstilværkstedet")) {
+                    $(this).replaceWith('<a href="/statisk/værksteder/tekstilværkstedet">' + $(this).html() + '</a>');
+                }
+                else if ($(this).html().indexOf(" - ") === -1 && $(this).html().match("^Kulturmaskinen")) {
+                    $(this).replaceWith('<a href="/rum-og-steder/store-sal">' + $(this).html() + '</a>');
+                }
+                else if ($(this).html().indexOf(" - ") > -1 && $(this).html().match("^Kulturmaskinen")) {
                     $(this).replaceWith('<a href="/rum-og-steder/mødelokaler">' + $(this).html() + '</a>');
                 }
                 else if ($(this).html().match("^Amfiscenen")) {
