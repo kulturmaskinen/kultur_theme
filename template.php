@@ -70,7 +70,19 @@ function node_load_by_title($title, $node_type) {
 }
 
 function kultur_theme_preprocess_html(&$vars) { 
-  
+    if(drupal_is_front_page())
+    {
+    $meta_description = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(     
+      'content' => 'Kulturmaskinen er byens kulturelle legeplads, med fantastiske muligheder for kulturelle arrangementer indendørs og i "Farvergården", der er specialindrettet til udendørs kulturbegivenheder.',
+      'name' =>  'description',
+    )
+  );
+      drupal_add_html_head($meta_description, 'meta_description');  
+    } 
+    
   drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(
       'type' => 'external'
   ));
