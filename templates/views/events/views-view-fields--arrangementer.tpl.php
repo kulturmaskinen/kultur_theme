@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file views-view-fields.tpl.php
  * Default simple view template to all the fields as a row.
@@ -22,60 +23,58 @@
  *
  * @ingroup views_templates
  */
-
 foreach ($fields as $id => $field) {
 
-  if ($id === 'field_rum_og_sted' && $fields['field_rum_og_sted']->content != '<div class="field-content"></div>') {
-  preg_match( '/(.*?)<\/div><\/div>/', $fields['field_rum_og_sted']->content, $matches );
-  
-    $field->content = $matches[0]  .'</a></div>';
-  
-  }
-  if ($id === 'field_location_name_line' && $fields['field_rum_og_sted']->content != '<div class="field-content"></div>') {
-    unset($field->content);
-  }
+    if ($id === 'field_rum_og_sted' && $fields['field_rum_og_sted']->content != '<div class="field-content"></div>') {
+        preg_match('/(.*?)<\/div><\/div>/', $fields['field_rum_og_sted']->content, $matches);
 
-  if($id == 'title') {
-    print '<div class="subheading">';
-  }
-  if($id == 'field_event_category') {
-    print $field->wrapper_prefix;
-    print $field->label_html;
-    print '<span class="view-btn btn btn-info">';
-    print $field->content;
-    print '</span>';
-    print $field->wrapper_suffix;    
-  }
-  
-  if (!empty($field->separator)) {
-    print $field->separator;
-  }
-  
-  if($id != 'field_event_category') {
-    print $field->wrapper_prefix;
-    print $field->label_html;
-    if (isset($field->content)) {
-    print $field->content;
+        $field->content = $matches[0] . '</a></div>';
     }
-    print $field->wrapper_suffix;
-  }
-  
-  if($id == 'field_lead') {
-    print "</div>";
-  }
-}
-/*
- * Add wrapper based on event kategory
- * external event types: kultunaut.dk
- */
-$wrapper = entity_metadata_wrapper('node', $row->nid);
-$is_extern = $wrapper->field_fra_kultunaut->value(); //this field is not contained in the view $row result
-if($is_extern == true)
-{
-    print '<div title="'.t('Arrangør: Ekstern').'" class="ribbon ribbon-external" >EX</div>';
-}
-else
-{
-    print '<div title="'.t('Arrangør : Kulturmaskinen').'" class="ribbon ribbon-internal" >KM</div>';
-   
+    if ($id === 'field_location_name_line' && $fields['field_rum_og_sted']->content != '<div class="field-content"></div>') {
+        unset($field->content);
+    }
+
+    if ($id == 'title') {
+        print '<div class="subheading">';
+    }
+    if ($id == 'field_event_category') {
+        print $field->wrapper_prefix;
+        print $field->label_html;
+        print '<span class="view-btn btn btn-info">';
+        print $field->content;
+        print '</span>';
+        print $field->wrapper_suffix;
+    }
+
+    if (!empty($field->separator)) {
+        print $field->separator;
+    }
+
+    if ($id != 'field_event_category') {
+        print $field->wrapper_prefix;
+        print $field->label_html;
+        if (isset($field->content)) {
+            print $field->content;
+        }
+        print $field->wrapper_suffix;
+    }
+
+
+    /*
+     * Add wrapper based on event kategory
+     * external event types: kultunaut.dk
+     */
+    $wrapper = entity_metadata_wrapper('node', $row->nid);
+    $is_extern = $wrapper->field_fra_kultunaut->value(); //this field is not contained in the view $row result
+    if ($is_extern == true) {
+        print '<div title="' . t('Arrangør: Ekstern') . '" class="ribbon ribbon-external" >EX</div>';
+    }
+    else {
+        print '<div title="' . t('Arrangør : Kulturmaskinen') . '" class="ribbon ribbon-internal" >KM</div>';
+    }
+
+
+    if ($id == 'view_node') {
+        print "</div>";
+    }
 }
