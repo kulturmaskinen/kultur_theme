@@ -60,7 +60,12 @@ foreach ($fields as $id => $field) {
     }
 
 
-    /*
+    if ($id == 'view_node') {
+        print "</div>";
+    }
+}
+
+ /*
      * Add wrapper based on event kategory
      * external event types: kultunaut.dk
      */
@@ -72,9 +77,3 @@ foreach ($fields as $id => $field) {
     else {
         print '<div title="' . t('Arrangør : Kulturmaskinen') . '" class="ribbon ribbon-internal" >KM</div>';
     }
-
-
-    if ($id == 'view_node') {
-        print "</div>";
-    }
-}

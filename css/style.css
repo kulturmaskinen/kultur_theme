@@ -7618,6 +7618,9 @@ article {
 .view-arrangementer .views-field-view-node .field-content > a {
   color: #00b9be;
 }
+.view-Nyheder .views-field-view-node .field-content > a {
+  color: #D70A8C;
+}
 .view-Nyheder .views-field-title .field-content > a {
   color: #D70A8C;
 }
