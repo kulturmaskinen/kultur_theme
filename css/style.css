@@ -7615,6 +7615,16 @@ article {
   color: #337ab7;
   text-transform: uppercase;
 }
+.view-arrangementer .views-field-view-node .field-content > a {
+  color: #00b9be;
+}
+.view-Nyheder .views-field-view-node .field-content > a {
+  color: #D70A8C;
+}
+.view-Nyheder .views-field-view-node {
+  float: left;
+  width: 50%;
+}
 .view-Nyheder .views-field-title .field-content > a {
   color: #D70A8C;
 }
