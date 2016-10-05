@@ -1,0 +1,175 @@
+/*
+    * bootstrap is mobile first
+    * therefore we define our standard setup here.
+    */
+@media only screen and (max-width: 768px) {
+  .arrangementer_front_block {
+    display: none;
+  }
+}
+/*
+    * Creating user login styling
+    */
+.views-field-field-list-image {
+  float: left;
+}
+.view-arrangementer .subheading {
+  width: 99%;
+  float: left;
+  margin: 0 0.0em 0.2em 0.5em;
+}
+/*
+    * Arrangemants block
+    */
+.view-arrangementer,
+.view-arrangementer .view-content,
+.views-row {
+  float: left;
+  width: 100%;
+}
+.view-arrangementer .views-row,
+.view-Nyheder .views-row {
+  min-height: 165px;
+  height: auto;
+}
+.view-arrangementer .views-field {
+  width: 50%;
+  float: left;
+}
+.view-arrangementer .views-field-field-list-image {
+  width: auto;
+  padding-right: 5px;
+}
+.view-arrangementer .views-field-title {
+  width: 90%;
+  float: left;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.view-arrangementer .views-field-field-event-category,
+.view-arrangementer .views-field-field-category {
+  width: auto;
+}
+.view-arrangementer .views-field-field-dato {
+  width: 62%;
+}
+.view-arrangementer .views-field-field-rum-og-sted {
+  width: 60%;
+}
+.view-arrangementer .views-field-field-location-name-line {
+  width: 60%;
+}
+.view-arrangementer .views-field-field-lead {
+  width: 67%;
+}
+.view-arrangementer .field-content {
+  float: left;
+  width: 100%;
+}
+.view-arrangementer img {
+  float: left;
+}
+.view-arrangementer .views-field-field-list-image {
+  margin-bottom: 0.6em;
+}
+/*
+    * view-id-Nyheder
+    */
+.view-Nyheder .subheading {
+  width: 100%;
+}
+.view-Nyheder .view-Nyheder img {
+  float: left;
+}
+.view-Nyheder .views-field-title {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+.view-Nyheder .views-field-field-lead {
+  float: left;
+  width: 67%;
+}
+.view-Nyheder .views-field-field-list-image {
+  padding-right: 5px;
+}
+.view-arrangementer .views-field-title .field-content > a {
+  /*max-width:99%;*/
+  width: 94%;
+  overflow: hidden;
+  display: inline-block;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  word-wrap: break-word;
+}
+.pager-next a {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin-right: 5px;
+}
+.pager-previous a {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+/*
+* Landscape overwrites
+*/
+@media (orientation: landscape) {
+  .view-arrangementer .subheading {
+    width: 99%;
+  }
+  .view-arrangementer .views-field-title {
+    font-size: 12px;
+    width: 100%;
+  }
+  .view-arrangementer .views-field-field-event-category,
+  .view-arrangementer .views-field-field-category {
+    width: auto;
+  }
+  .view-arrangementer .views-field-field-dato {
+    width: auto;
+  }
+  .view-arrangementer .views-field-field-rum-og-sted {
+    width: 70%;
+  }
+  .view-arrangementer .views-field-field-location-name-line {
+    width: 70%;
+  }
+  .view-arrangementer .views-field-field-lead {
+    width: 70%;
+  }
+  .view-arrangementer .views-field-field-list-image {
+    width: auto;
+    padding-right: 5px;
+  }
+  .view-arrangementer .views-field-field-list-image {
+    margin-bottom: 0.6em;
+  }
+  /*
+    * view-id-Nyheder
+    */
+  .view-Nyheder .subheading {
+    width: 100%;
+  }
+  .view-Nyheder .view-Nyheder img {
+    float: left;
+  }
+  .view-Nyheder .views-field-field-lead {
+    float: left;
+    width: 78%;
+  }
+  .view-Nyheder .views-field-field-list-image {
+    padding-right: 5px;
+  }
+  .view-arrangementer .views-row,
+  .view-Nyheder .views-row {
+    height: 135px;
+  }
+}
