@@ -208,8 +208,29 @@ function kultur_theme_menu_tree__main_menu($vars) {
         . '</ul><div class="navbar-form navbar-right">' . drupal_render($form) . '</div>';
   } else {
     return '
-    <ul class="menu nav" >' . $vars['tree'] . ''
-        . '</ul>';
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <ul class="dropdown-menu">
+            ' . $vars['tree'] . ''
+        . '
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>;';
   }
 }
 
