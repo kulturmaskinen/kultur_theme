@@ -181,9 +181,6 @@ function kultur_theme_preprocess_html(&$vars) {
 */
 function kultur_theme_menu_tree__main_menu($vars) {
   $form = drupal_get_form('search_block_form');
-$subject = $vars['tree'];
-$pattern = '/class="active-trail active">(.+)<\/a>/';
-preg_match($pattern, $subject, $matches, PREG_OFFSET_CAPTURE, 3);
 
  if (stripos($vars['tree'], 'home')) {
     return '
@@ -215,7 +212,7 @@ preg_match($pattern, $subject, $matches, PREG_OFFSET_CAPTURE, 3);
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" style="width:90%;background-color:#DDDDDD;margin-right:5%;" data-target="#bs-example-navbar-collapse-4">
-        ' . $matches[1][0] . '<span class="caret" ></span>
+        ' . drupal_get_title() . '<span class="caret" ></span>
       </button>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">

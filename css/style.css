@@ -1620,6 +1620,9 @@ table th[class*="col-"] {
   min-height: 0.01%;
 }
 @media screen and (max-width: 767px) {
+    .breadcrumb {
+        display: none;
+    }
   .table-responsive {
     width: 100%;
     margin-bottom: 12.75px;
