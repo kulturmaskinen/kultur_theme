@@ -7,7 +7,7 @@
 
         //$('.dropdown-menu').equalize();
         if ($(window).width() > 1024) {
-            $('.navbar-nav').equalize({children: '.dropdown-menu', equalize: 'height'});
+            $('#bs-example-navbar-collapse-1').equalize({children: '.dropdown-menu', equalize: 'height'});
         }
 
         if ($('iframe').exists()) {

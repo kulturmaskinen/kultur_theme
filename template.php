@@ -217,8 +217,8 @@ function kultur_theme_menu_tree__main_menu($vars) {
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <ul class="dropdown-menu">
+        <li>
+  <ul>
     ' . $vars['tree'] . ''
         . '
   </ul>
