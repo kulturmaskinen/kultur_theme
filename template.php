@@ -158,19 +158,41 @@ function kultur_theme_preprocess_html(&$vars) {
   elseif (drupal_match_path($path, $front)) { 
     $node = node_load_by_title('forside baggrund', 'background');
   }
-  
+
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
 
-    drupal_add_css(
-        '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+    $file_parts = pathinfo($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
+
+    $video = array(
+      '#tag' => 'source', // The #tag is the html tag - 
+      '#attributes' => array(// Set up an array of attributes inside the tag
+        'src' => $bg1600,
+        'type' => 'video/mp4',
+      ),
+      '#prefix' => '<video autoplay loop id="video-background" muted>',
+      '#suffix' => '</video>',
+    );
+
+    if ($file_parts['extension'] == 'mp4') {
+      drupal_add_html_head($video, 'bg');
+      drupal_add_css(
+          'body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+  background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; } ', 'inline'
+      );
+      drupal_add_css('#video-background { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; }', 'inline');
+    }
+    else {
+      drupal_add_css(
+          '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
   background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
-    );
-    drupal_add_css(
-        '@media screen and (min-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+      );
+      drupal_add_css(
+          '@media screen and (min-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
   background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1600 . ');} }', 'inline'
-    );
+      );
+    }
   }
 }
 
