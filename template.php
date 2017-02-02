@@ -163,7 +163,7 @@ function kultur_theme_preprocess_html(&$vars) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
 
-    $file_parts = pathinfo($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
+    $file_parts = pathinfo($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
 
     $video = array(
       '#tag' => 'source', // The #tag is the html tag - 
