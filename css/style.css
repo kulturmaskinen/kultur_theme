@@ -1620,9 +1620,6 @@ table th[class*="col-"] {
   min-height: 0.01%;
 }
 @media screen and (max-width: 767px) {
-    .breadcrumb {
-        display: none;
-    }
   .table-responsive {
     width: 100%;
     margin-bottom: 12.75px;
@@ -7885,7 +7882,7 @@ article {
     width: auto;
   }
   .view-arrangementer .views-field-field-dato {
-    width: auto;
+    width: 62%;
   }
   .view-arrangementer .views-field-field-rum-og-sted {
     width: 70%;
@@ -8010,7 +8007,7 @@ article {
     width: auto;
   }
   .view-arrangementer .views-field-field-dato {
-    width: auto;
+    width: 62%;
   }
   .view-arrangementer .views-field-field-rum-og-sted {
     width: 78%;
