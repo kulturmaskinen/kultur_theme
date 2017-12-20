@@ -1,3 +1,6 @@
+#bs-example-navbar-collapse-4 ul li > a {
+  color: white;
+}
 html {
   height: 100%;
 }
@@ -364,7 +367,7 @@ div.password-suggestions ul {
   font-size: 120%;
 }
 .form-autocomplete .glyphicon.glyphicon-spin {
-  color: white;
+  color: #337ab7;
 }
 .form-autocomplete .input-group-addon {
   background-color: #ffffff;
