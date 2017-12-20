@@ -63,14 +63,8 @@
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
   <?php print $page_top; ?>
-  <?php print $page; ?>
-    <span>
-  <?php
-  global $base_path;
-  print "<img src='" . $base_path . path_to_theme() . "/images/prikker.png' width='362' height='260' style='position:absolute;bottom:7em;right:0;z-index:-1000;' class='hidden-sm hidden-xs' />";
-  ?>
-    </span>
-  <?php print $page_bottom; ?>
+    <?php print $page; ?>
+    <?php print $page_bottom; ?>
 <!--
 * Temporary spot for dialogs , until we are more stramlined 
 * place can be chosen
